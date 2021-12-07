@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A6B11DD-FA12-4113-A411-6DDE7F1296CE}</ProjectGuid>
+    <ProjectGuid>{FB6B14E9-95FB-4CB7-9B55-50809569BAC2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Ebury_Partners</RootNamespace>
-    <AssemblyName>Ebury Partners</AssemblyName>
+    <RootNamespace>EburyPartners</RootNamespace>
+    <AssemblyName>EburyPartners</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

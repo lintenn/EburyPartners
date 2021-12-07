@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ebury_Partners.Properties
+namespace EburyPartners.Properties
 {
 
 

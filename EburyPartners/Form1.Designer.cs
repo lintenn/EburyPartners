@@ -1,4 +1,4 @@
-﻿namespace Ebury_Partners
+﻿namespace EburyPartners
 {
     partial class Form1
     {
