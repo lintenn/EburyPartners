@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FiltroClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltroClientes.Designer.cs">
+      <DependentUpon>FiltroClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Holanda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FiltroClientes.resx">
+      <DependentUpon>FiltroClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Holanda.resx">
       <DependentUpon>Holanda.cs</DependentUpon>
     </EmbeddedResource>
