@@ -10,4 +10,21 @@ C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.EburyPartners.resources
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Holanda.resources
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.FiltroCuenta.resources
+<<<<<<< HEAD
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.AssemblyReference.cache
+=======
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe.config
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\bin\Debug\EburyPartners.pdb
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.AssemblyReference.cache
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.SuggestedBindingRedirects.cache
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Alemania.resources
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.FiltroCuenta.resources
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Holanda.resources
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.EburyPartners.resources
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Properties.Resources.resources
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.GenerateResource.cache
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.CoreCompileInputs.cache
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
+>>>>>>> main
