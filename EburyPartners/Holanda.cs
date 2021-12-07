@@ -26,5 +26,13 @@ namespace EburyPartners
         {
 
         }
+
+        private void bFiltroCuenta_Click(object sender, EventArgs e)
+        {
+            FiltroCuenta ventana = new FiltroCuenta();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
