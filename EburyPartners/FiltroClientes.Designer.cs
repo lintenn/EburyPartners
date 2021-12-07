@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // FiltroClientes
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FiltroClientes";
-            this.Text = "Filtro por Clientes";
-            this.Load += new System.EventHandler(this.FiltroClientes_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "FiltroClientes";
         }
 
         #endregion

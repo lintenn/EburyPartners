@@ -16,10 +16,5 @@ namespace EburyPartners
         {
             InitializeComponent();
         }
-
-        private void FiltroClientes_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
