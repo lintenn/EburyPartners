@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace EburyPartners
 {
-    public partial class Form1 : Form
+    public partial class EburyPartners : Form
     {
-        public Form1()
+        public EburyPartners()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
