@@ -24,7 +24,10 @@ namespace EburyPartners
 
         private void bAlemania_Click(object sender, EventArgs e)
         {
-
+            Alemania ventana = new Alemania();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
         }
 
         private void bHolanda_Click(object sender, EventArgs e)
