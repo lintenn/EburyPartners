@@ -38,14 +38,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 149);
+            this.dataGridView1.Location = new System.Drawing.Point(54, 137);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(654, 229);
+            this.dataGridView1.Size = new System.Drawing.Size(654, 241);
             this.dataGridView1.TabIndex = 0;
             // 
             // bBuscar
             // 
-            this.bBuscar.Location = new System.Drawing.Point(617, 89);
+            this.bBuscar.Location = new System.Drawing.Point(617, 74);
             this.bBuscar.Name = "bBuscar";
             this.bBuscar.Size = new System.Drawing.Size(91, 20);
             this.bBuscar.TabIndex = 1;
@@ -57,7 +57,7 @@
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(51, 121);
+            this.label1.Location = new System.Drawing.Point(51, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
@@ -65,10 +65,12 @@
             // 
             // tCuenta
             // 
-            this.tCuenta.Location = new System.Drawing.Point(54, 89);
+            this.tCuenta.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.tCuenta.Location = new System.Drawing.Point(54, 74);
             this.tCuenta.Name = "tCuenta";
             this.tCuenta.Size = new System.Drawing.Size(523, 20);
             this.tCuenta.TabIndex = 3;
+            this.tCuenta.Text = "Cuenta bancaria";
             // 
             // FiltroCuenta
             // 
