@@ -16,5 +16,10 @@ namespace EburyPartners
         {
             InitializeComponent();
         }
+
+        private void cbActivas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.bGenerarInformeInicial = new System.Windows.Forms.Button();
             this.bGenerarInformeSemanal = new System.Windows.Forms.Button();
+            this.tMessage = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bGenerarInformeInicial
@@ -54,16 +55,30 @@
             this.bGenerarInformeSemanal.UseVisualStyleBackColor = true;
             this.bGenerarInformeSemanal.Click += new System.EventHandler(this.bGenerarInformeSemanal_Click);
             // 
+            // tMessage
+            // 
+            this.tMessage.BackColor = System.Drawing.SystemColors.Control;
+            this.tMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tMessage.Enabled = false;
+            this.tMessage.Location = new System.Drawing.Point(276, 379);
+            this.tMessage.Multiline = true;
+            this.tMessage.Name = "tMessage";
+            this.tMessage.Size = new System.Drawing.Size(244, 20);
+            this.tMessage.TabIndex = 2;
+            // 
             // Alemania
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tMessage);
             this.Controls.Add(this.bGenerarInformeSemanal);
             this.Controls.Add(this.bGenerarInformeInicial);
             this.Name = "Alemania";
             this.Text = "Alemania";
+            this.Load += new System.EventHandler(this.Alemania_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,5 +86,6 @@
 
         private System.Windows.Forms.Button bGenerarInformeInicial;
         private System.Windows.Forms.Button bGenerarInformeSemanal;
+        private System.Windows.Forms.TextBox tMessage;
     }
 }
