@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace EburyPartners
 {
-    public partial class EburyPartners : Form
+    public partial class Holanda : Form
     {
-        public EburyPartners()
+        public Holanda()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
