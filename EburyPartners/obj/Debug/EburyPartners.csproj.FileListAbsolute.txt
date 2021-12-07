@@ -1,7 +1,6 @@
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe.config
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\EburyPartners.pdb
-C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.AssemblyReference.cache
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.SuggestedBindingRedirects.cache
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Properties.Resources.resources
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.GenerateResource.cache
