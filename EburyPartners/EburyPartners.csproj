@@ -52,6 +52,12 @@
     <Compile Include="FiltroCuenta.Designer.cs">
       <DependentUpon>FiltroCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alemania.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alemania.Designer.cs">
+      <DependentUpon>Alemania.cs</DependentUpon>
+    </Compile>
     <Compile Include="Holanda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Alemania.resx">
+      <DependentUpon>Alemania.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FiltroCuenta.resx">
       <DependentUpon>FiltroCuenta.cs</DependentUpon>
     </EmbeddedResource>
