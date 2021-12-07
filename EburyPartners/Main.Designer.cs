@@ -35,9 +35,9 @@
             // bAlemania
             // 
             this.bAlemania.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bAlemania.Location = new System.Drawing.Point(443, 188);
+            this.bAlemania.Location = new System.Drawing.Point(447, 188);
             this.bAlemania.Name = "bAlemania";
-            this.bAlemania.Size = new System.Drawing.Size(162, 64);
+            this.bAlemania.Size = new System.Drawing.Size(176, 64);
             this.bAlemania.TabIndex = 0;
             this.bAlemania.Text = "Informe Alemania";
             this.bAlemania.UseVisualStyleBackColor = true;
@@ -48,7 +48,7 @@
             this.bHolanda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bHolanda.Location = new System.Drawing.Point(162, 188);
             this.bHolanda.Name = "bHolanda";
-            this.bHolanda.Size = new System.Drawing.Size(162, 64);
+            this.bHolanda.Size = new System.Drawing.Size(176, 64);
             this.bHolanda.TabIndex = 1;
             this.bHolanda.Text = "Informe Holanda";
             this.bHolanda.UseVisualStyleBackColor = true;
