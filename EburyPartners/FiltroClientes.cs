@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace EburyPartners
 {
-    public partial class FiltroCuenta : Form
+    public partial class FiltroClientes : Form
     {
-        public FiltroCuenta()
+        public FiltroClientes()
         {
             InitializeComponent();
-        }
-
-        private void cbActivas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

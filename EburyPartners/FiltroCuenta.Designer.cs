@@ -32,6 +32,7 @@
             this.bBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tCuenta = new System.Windows.Forms.TextBox();
+            this.cbActivas = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,9 +69,22 @@
             this.tCuenta.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.tCuenta.Location = new System.Drawing.Point(54, 74);
             this.tCuenta.Name = "tCuenta";
-            this.tCuenta.Size = new System.Drawing.Size(523, 20);
+            this.tCuenta.Size = new System.Drawing.Size(404, 20);
             this.tCuenta.TabIndex = 3;
             this.tCuenta.Text = "Cuenta bancaria";
+            // 
+            // cbActivas
+            // 
+            this.cbActivas.FormattingEnabled = true;
+            this.cbActivas.Items.AddRange(new object[] {
+            "Activas",
+            "Inactivas",
+            "Todas"});
+            this.cbActivas.Location = new System.Drawing.Point(475, 73);
+            this.cbActivas.Name = "cbActivas";
+            this.cbActivas.Size = new System.Drawing.Size(121, 21);
+            this.cbActivas.TabIndex = 4;
+            this.cbActivas.SelectedIndexChanged += new System.EventHandler(this.cbActivas_SelectedIndexChanged);
             // 
             // FiltroCuenta
             // 
@@ -78,6 +92,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbActivas);
             this.Controls.Add(this.tCuenta);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bBuscar);
@@ -96,5 +111,6 @@
         private System.Windows.Forms.Button bBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tCuenta;
+        private System.Windows.Forms.ComboBox cbActivas;
     }
 }
