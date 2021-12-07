@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.bFiltroCuenta = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // bFiltroCuenta
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(300, 89);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(204, 54);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Filtro por cuenta bancaria";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bFiltroCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bFiltroCuenta.Location = new System.Drawing.Point(300, 89);
+            this.bFiltroCuenta.Name = "bFiltroCuenta";
+            this.bFiltroCuenta.Size = new System.Drawing.Size(204, 54);
+            this.bFiltroCuenta.TabIndex = 0;
+            this.bFiltroCuenta.Text = "Filtro por cuenta bancaria";
+            this.bFiltroCuenta.UseVisualStyleBackColor = true;
+            this.bFiltroCuenta.Click += new System.EventHandler(this.bFiltroCuenta_Click);
             // 
             // button2
             // 
@@ -73,7 +74,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bFiltroCuenta);
             this.Name = "Holanda";
             this.Text = "Holanda";
             this.ResumeLayout(false);
@@ -82,7 +83,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bFiltroCuenta;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
     }
