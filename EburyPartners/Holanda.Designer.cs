@@ -36,9 +36,10 @@
             // bFiltroCuenta
             // 
             this.bFiltroCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bFiltroCuenta.Location = new System.Drawing.Point(300, 89);
+            this.bFiltroCuenta.Location = new System.Drawing.Point(400, 110);
+            this.bFiltroCuenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bFiltroCuenta.Name = "bFiltroCuenta";
-            this.bFiltroCuenta.Size = new System.Drawing.Size(204, 54);
+            this.bFiltroCuenta.Size = new System.Drawing.Size(272, 66);
             this.bFiltroCuenta.TabIndex = 0;
             this.bFiltroCuenta.Text = "Filtro por cuenta bancaria";
             this.bFiltroCuenta.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(300, 181);
+            this.button2.Location = new System.Drawing.Point(400, 223);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(204, 54);
+            this.button2.Size = new System.Drawing.Size(272, 66);
             this.button2.TabIndex = 1;
             this.button2.Text = "Filtro por clientes";
             this.button2.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(300, 275);
+            this.button3.Location = new System.Drawing.Point(400, 338);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(204, 54);
+            this.button3.Size = new System.Drawing.Size(272, 66);
             this.button3.TabIndex = 2;
             this.button3.Text = "Health Check";
             this.button3.UseVisualStyleBackColor = true;
@@ -68,13 +71,14 @@
             // 
             // Holanda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.bFiltroCuenta);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Holanda";
             this.Text = "Holanda";
             this.ResumeLayout(false);
