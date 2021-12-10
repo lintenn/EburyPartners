@@ -24,7 +24,10 @@ namespace EburyPartners
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            HealthCheck ventana = new HealthCheck();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
         }
 
         private void bFiltroCuenta_Click(object sender, EventArgs e)
@@ -33,6 +36,11 @@ namespace EburyPartners
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
+        }
+
+        private void Holanda_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
