@@ -52,6 +52,7 @@
             this.bBuscar.TabIndex = 1;
             this.bBuscar.Text = "Buscar";
             this.bBuscar.UseVisualStyleBackColor = true;
+            this.bBuscar.Click += new System.EventHandler(this.bBuscar_Click);
             // 
             // label1
             // 
@@ -60,9 +61,8 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(51, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
             // 
             // tCuenta
             // 
@@ -72,13 +72,14 @@
             this.tCuenta.Size = new System.Drawing.Size(404, 20);
             this.tCuenta.TabIndex = 3;
             this.tCuenta.Text = "Cuenta bancaria";
+            this.tCuenta.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tCuenta_MouseClick);
             // 
             // cbActivas
             // 
             this.cbActivas.FormattingEnabled = true;
             this.cbActivas.Items.AddRange(new object[] {
-            "Activas",
-            "Inactivas",
+            "Activa",
+            "Inactiva",
             "Todas"});
             this.cbActivas.Location = new System.Drawing.Point(475, 73);
             this.cbActivas.Name = "cbActivas";
