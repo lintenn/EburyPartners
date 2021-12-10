@@ -62,11 +62,11 @@
             this.tMessage.BackColor = System.Drawing.SystemColors.Control;
             this.tMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tMessage.Enabled = false;
-            this.tMessage.Location = new System.Drawing.Point(368, 466);
+            this.tMessage.Location = new System.Drawing.Point(352, 447);
             this.tMessage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tMessage.Multiline = true;
             this.tMessage.Name = "tMessage";
-            this.tMessage.Size = new System.Drawing.Size(325, 25);
+            this.tMessage.Size = new System.Drawing.Size(369, 54);
             this.tMessage.TabIndex = 2;
             // 
             // Alemania

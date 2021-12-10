@@ -35,3 +35,77 @@ C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\obj\Debug\EburyPart
 C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
 C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
 C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.AssemblyReference.cache
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe.config
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\EburyPartners.pdb
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\Google.Protobuf.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\MySql.Data.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\System.Buffers.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\System.Memory.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\ZstdNet.dll
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\Google.Protobuf.pdb
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\Google.Protobuf.xml
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\MySql.Data.xml
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\System.Buffers.xml
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\System.Memory.xml
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.AssemblyReference.cache
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.SuggestedBindingRedirects.cache
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Alemania.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.FiltroCuenta.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Holanda.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.EburyPartners.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Properties.Resources.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.GenerateResource.cache
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.CoreCompileInputs.cache
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.CopyComplete
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe.config
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\EburyPartners.pdb
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\Google.Protobuf.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\MySql.Data.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\System.Buffers.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\System.Memory.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\ZstdNet.dll
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\Google.Protobuf.pdb
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\Google.Protobuf.xml
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\MySql.Data.xml
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\System.Buffers.xml
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\System.Memory.xml
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.AssemblyReference.cache
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Alemania.resources
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.FiltroCuenta.resources
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Holanda.resources
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.EburyPartners.resources
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Properties.Resources.resources
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.GenerateResource.cache
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.CoreCompileInputs.cache
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.CopyComplete
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.HealthCheck.resources
