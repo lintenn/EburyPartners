@@ -24,7 +24,7 @@ namespace EburyPartners
             InitializeComponent();
         }
 
-        private void generarCSV(string sql)
+        private void generarCSV(string sql, string name)
         {
             MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
 
@@ -35,7 +35,7 @@ namespace EburyPartners
             string path = Directory.GetCurrentDirectory();
             //for (int i = 0; i < 9; i++)
             //    path = path.Remove(path.Length - 1);
-            path = path + @"\csvfiles\inicial.csv";
+            path = path + @"\csvfiles\"+name+".csv";
 
             File.WriteAllText(path, ""); // creo el fichero csv vacío
 
@@ -62,9 +62,20 @@ namespace EburyPartners
         {
             try
             {
-                generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ");
 
-                tMessage.Text = "Se ha generado el informe csv inicial con éxito";
+                MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
+
+                if (miBD.Select("Select * From Registro_Informe Where es_inicial = 1;").Count() == 0)
+                {
+                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ", "inicial");
+
+                    miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
+
+                    tMessage.Text = "Se ha generado el informe csv inicial con éxito";
+                } else
+                {
+                    tMessage.Text = "ERROR: Ya hay un informe inicial generado";
+                }
 
             }
             catch (Exception ex)
@@ -76,7 +87,34 @@ namespace EburyPartners
 
         private void bGenerarInformeSemanal_Click(object sender, EventArgs e)
         {
-            tMessage.Text = "";
+            try
+            {
+
+                MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
+
+                if (miBD.Select("Select * From Registro_Informe;").Count() == 0)
+                {
+                    tMessage.Text = "ERROR: No hay un informe inicial generado";
+                }
+                else
+                {
+
+                    string hora = DateTime.Now.ToString("u");
+
+                    hora = hora.Replace(':', '.');
+
+                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", "semanal "+hora);
+
+                    miBD.Insert("Insert into Registro_Informe values (NOW(), 0)");
+
+                    tMessage.Text = "Se ha generado el informe csv semanal con éxito";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                tMessage.Text = "ERROR: " + ex.Message;
+            }
         }
 
         private void Alemania_Load(object sender, EventArgs e)
