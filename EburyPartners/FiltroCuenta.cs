@@ -68,5 +68,13 @@ namespace EburyPartners
         {
             tCuenta.Text = "";
         }
+
+        private void bBack_Click(object sender, EventArgs e)
+        {
+            Holanda ventana = new Holanda();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

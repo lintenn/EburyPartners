@@ -148,3 +148,4 @@ C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Pro
 C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
 C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
 C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\obj\Debug\EburyPartners.HealthCheck.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.HealthCheck.resources
