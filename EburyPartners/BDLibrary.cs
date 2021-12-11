@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace BDLibrary
 {
@@ -34,6 +35,30 @@ namespace BDLibrary
 
             conexion.Close();
             return res;
+        }
+
+        public void mostrarDataGrid(DataGridView dg, string consulta, Label l)
+        {
+            try
+            {
+                MySqlConnection conexion = new MySqlConnection(cadenaConexion);
+
+                conexion.Open();
+
+                MySqlCommand comando = new MySqlCommand(consulta, conexion);
+
+                MySqlDataAdapter con = new MySqlDataAdapter(comando);          
+                DataSet ds = new DataSet();
+                con.Fill(ds);
+
+                dg.DataSource = ds.Tables[0];
+                
+
+                conexion.Close();
+            }catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         public List<object[]> Select(string consultaSelect)
