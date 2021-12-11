@@ -132,6 +132,9 @@
     <EmbeddedResource Include="Alemania.resx">
       <DependentUpon>Alemania.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FiltroClientes.resx">
+      <DependentUpon>FiltroClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FiltroCuenta.resx">
       <DependentUpon>FiltroCuenta.cs</DependentUpon>
     </EmbeddedResource>
