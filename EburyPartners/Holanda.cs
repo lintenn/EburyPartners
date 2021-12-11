@@ -17,9 +17,12 @@ namespace EburyPartners
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void bFiltroClientes_Click(object sender, EventArgs e)
         {
-
+            FiltroClientes ventana = new FiltroClientes();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -45,10 +48,7 @@ namespace EburyPartners
 
         private void bBack_Click(object sender, EventArgs e)
         {
-            EburyPartners ventana = new EburyPartners();
-            this.Visible = false;
-            ventana.ShowDialog();
-            this.Visible = true;
+            this.Close();
         }
     }
 }
