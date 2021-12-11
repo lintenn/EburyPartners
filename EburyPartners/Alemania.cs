@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net.Mail;
+using System.Net;
 
 namespace EburyPartners
 {
@@ -24,6 +26,46 @@ namespace EburyPartners
             InitializeComponent();
         }
 
+        private void sendMail(string name)
+        {
+            string path = Directory.GetCurrentDirectory() + @"\csvfiles\" + name + ".csv";
+            string to = "linten42@gmail.com";
+            string asunto = "Informe aleman " + name;
+            string body = @"<style>
+                            h1{color:dodgerblue;}
+                            h2{color:darkorange;}
+                            </style>
+                            <h1>Envio del informe aleman " + name + @"</h1></br>
+                            <h2>Saludos regulador aleman, aqui se le envia su informe/reporte requerido.</h2>";
+            string from = "eburypartnersgrupo01@outlook.es";
+            string password = "cumplire_la_5amld";
+            string displayName = "EburyPartner";
+
+            try
+            {
+                MailMessage mail = new MailMessage();
+
+                mail.Attachments.Add(new Attachment(path));
+
+                mail.From = new MailAddress(from, displayName);
+                mail.To.Add(to);
+
+                mail.Subject = asunto;
+                mail.Body = body;
+                mail.IsBodyHtml = true;
+
+                SmtpClient client = new SmtpClient("smtp.office365.com", 587);
+                client.Credentials = new NetworkCredential(from, password);
+                client.EnableSsl = true;
+
+                client.Send(mail);
+            }
+            catch (Exception ex)
+            {
+                tMessage.Text = "ERROR: " + ex.Message;
+            }
+        }
+
         private void generarCSV(string sql, string name)
         {
             MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
@@ -33,11 +75,9 @@ namespace EburyPartners
 
             //string path = @"C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\bin\Debug\csvfiles\inicial.csv";
             string path = Directory.GetCurrentDirectory();
-            //for (int i = 0; i < 9; i++)
-            //    path = path.Remove(path.Length - 1);
             path = path + @"\csvfiles\"+name+".csv";
 
-            File.WriteAllText(path, ""); // creo el fichero csv vacío
+            File.WriteAllText(path, "IBAN,primer nombre,segundo nombre,calle,numero edificio,ciudad,codigo postal,pais,DNI/NIF,fecha de nacimiento\n"); // creo el fichero csv vacío
 
             foreach (object[] tupla in miBD.Select(sql))
             {
@@ -69,10 +109,13 @@ namespace EburyPartners
                 {
                     generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ", "inicial");
 
+                    sendMail("inicial");
+                    
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
 
                     tMessage.Text = "Se ha generado el informe csv inicial con éxito";
-                } else
+                } 
+                else
                 {
                     tMessage.Text = "ERROR: Ya hay un informe inicial generado";
                 }
@@ -104,6 +147,8 @@ namespace EburyPartners
                     hora = hora.Replace(':', '.');
 
                     generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", "semanal "+hora);
+
+                    sendMail("semanal " + hora);
 
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 0)");
 
