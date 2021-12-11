@@ -48,10 +48,7 @@ namespace EburyPartners
 
         private void bBack_Click(object sender, EventArgs e)
         {
-            EburyPartners ventana = new EburyPartners();
-            this.Visible = false;
-            ventana.ShowDialog();
-            this.Visible = true;
+            this.Close();
         }
     }
 }
