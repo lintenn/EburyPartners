@@ -50,7 +50,7 @@ namespace EburyPartners
             tMessage.Text = health;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void bBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }
