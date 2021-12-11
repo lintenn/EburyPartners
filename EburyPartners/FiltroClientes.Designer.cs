@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiltroClientes));
             this.t1Nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bBuscar = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.tCalle = new System.Windows.Forms.TextBox();
             this.tNumero = new System.Windows.Forms.TextBox();
             this.tCodPostal = new System.Windows.Forms.TextBox();
+            this.bBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,11 +136,31 @@
             this.tCodPostal.Enter += new System.EventHandler(this.tCodPostal_Enter);
             this.tCodPostal.Leave += new System.EventHandler(this.tCodPostal_Leave);
             // 
+            // bBack
+            // 
+            this.bBack.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.bBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bBack.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bBack.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.bBack.FlatAppearance.BorderSize = 10;
+            this.bBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bBack.ForeColor = System.Drawing.Color.Transparent;
+            this.bBack.Image = ((System.Drawing.Image)(resources.GetObject("bBack.Image")));
+            this.bBack.Location = new System.Drawing.Point(707, 384);
+            this.bBack.Name = "bBack";
+            this.bBack.Size = new System.Drawing.Size(81, 60);
+            this.bBack.TabIndex = 14;
+            this.bBack.UseMnemonic = false;
+            this.bBack.UseVisualStyleBackColor = false;
+            this.bBack.Click += new System.EventHandler(this.bBack_Click);
+            // 
             // FiltroClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bBack);
             this.Controls.Add(this.tCodPostal);
             this.Controls.Add(this.tNumero);
             this.Controls.Add(this.tCalle);
@@ -166,5 +188,6 @@
         private System.Windows.Forms.TextBox tCalle;
         private System.Windows.Forms.TextBox tNumero;
         private System.Windows.Forms.TextBox tCodPostal;
+        private System.Windows.Forms.Button bBack;
     }
 }
