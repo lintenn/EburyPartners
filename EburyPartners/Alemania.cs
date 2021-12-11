@@ -162,9 +162,9 @@ namespace EburyPartners
             }
         }
 
-        private void Alemania_Load(object sender, EventArgs e)
+        private void bBack_Click_1(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
