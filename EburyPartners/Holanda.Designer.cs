@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Holanda));
             this.bFiltroCuenta = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bFiltroClientes = new System.Windows.Forms.Button();
             this.bHealthCheck = new System.Windows.Forms.Button();
             this.bBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -46,16 +46,16 @@
             this.bFiltroCuenta.UseVisualStyleBackColor = true;
             this.bFiltroCuenta.Click += new System.EventHandler(this.bFiltroCuenta_Click);
             // 
-            // button2
+            // bFiltroClientes
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(300, 181);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(204, 54);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Filtro por clientes";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.bFiltroClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bFiltroClientes.Location = new System.Drawing.Point(300, 181);
+            this.bFiltroClientes.Name = "bFiltroClientes";
+            this.bFiltroClientes.Size = new System.Drawing.Size(204, 54);
+            this.bFiltroClientes.TabIndex = 1;
+            this.bFiltroClientes.Text = "Filtro por clientes";
+            this.bFiltroClientes.UseVisualStyleBackColor = true;
+            this.bFiltroClientes.Click += new System.EventHandler(this.bFiltroClientes_Click);
             // 
             // bHealthCheck
             // 
@@ -94,7 +94,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.bBack);
             this.Controls.Add(this.bHealthCheck);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.bFiltroClientes);
             this.Controls.Add(this.bFiltroCuenta);
             this.Name = "Holanda";
             this.Text = "Holanda";
@@ -106,7 +106,7 @@
         #endregion
 
         private System.Windows.Forms.Button bFiltroCuenta;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bFiltroClientes;
         private System.Windows.Forms.Button bHealthCheck;
         private System.Windows.Forms.Button bBack;
     }
