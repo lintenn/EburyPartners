@@ -35,7 +35,7 @@ namespace EburyPartners
             try
             {
                 MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
-                List<object[]> tupla = miBD.Select("SELECT * FROM Producto");
+                List<object[]> tupla = miBD.Select("select schema_name from information_schema.schemata where schema_name = 'database name';");
 
                 if (tupla == null)
                 {
