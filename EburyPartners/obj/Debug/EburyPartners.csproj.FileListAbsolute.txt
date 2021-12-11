@@ -186,3 +186,4 @@ D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartn
 D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.exe
 D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.pdb
 D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.FiltroClientes.resources
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.FiltroClientes.resources
