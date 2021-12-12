@@ -199,3 +199,5 @@ C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\
 >>>>>>> Galo
 C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.dll
 C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.xml
