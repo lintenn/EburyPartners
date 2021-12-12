@@ -126,20 +126,10 @@ namespace EburyPartners
                     File.Delete(Directory.GetCurrentDirectory() + @"\csvfiles\" + nombre + ".csv");
                     Directory.Delete(Directory.GetCurrentDirectory() + @"\csvfiles");
 
-<<<<<<< HEAD
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
 
                     tMessage.Text = "Se ha generado y enviado el informe csv inicial con éxito";
-                } 
-=======
-                    sendMail("inicial");
-
-                    miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
-
-                    tMessage.Text = "Se ha generado el informe csv inicial con éxito";
-                }
->>>>>>> Galo
-                else
+                } else
                 {
                     tMessage.Text = "ERROR: Ya hay un informe inicial generado";
                 }
@@ -176,14 +166,8 @@ namespace EburyPartners
 
                     sendMail(nombre);
 
-<<<<<<< HEAD
                     File.Delete(Directory.GetCurrentDirectory() + @"\csvfiles\" + nombre + ".csv");
                     Directory.Delete(Directory.GetCurrentDirectory() + @"\csvfiles");
-=======
-                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", "semanal " + hora);
-
-                    sendMail("semanal " + hora);
->>>>>>> Galo
 
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 0)");
 
