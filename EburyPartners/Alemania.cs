@@ -59,6 +59,11 @@ namespace EburyPartners
                 client.EnableSsl = true;
 
                 client.Send(mail);
+
+                client.Dispose();
+
+                mail.Dispose();
+
             }
             catch (Exception ex)
             {
@@ -94,7 +99,6 @@ namespace EburyPartners
 
                 File.AppendAllText(path, IBAN + "," + primer_nombre + "," + segundo_nombre + "," + calle + ","
                     + num_edificio + "," + ciudad + "," + codigo_postal + "," + pais + "," + DNI_NIF + "," + fecha_nacimiento + "\n");
-
             }
         }
 
@@ -113,10 +117,15 @@ namespace EburyPartners
 
                     hora = hora.Remove(hora.Length - 1);
 
-                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ", "inicial " + hora);
+                    String nombre = "inicial " + hora;
 
-                    sendMail("inicial");
-                    
+                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ", nombre);
+
+                    sendMail(nombre);
+
+                    File.Delete(Directory.GetCurrentDirectory() + @"\csvfiles\" + nombre + ".csv");
+                    Directory.Delete(Directory.GetCurrentDirectory() + @"\csvfiles");
+
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
 
                     tMessage.Text = "Se ha generado y enviado el informe csv inicial con éxito";
@@ -136,6 +145,13 @@ namespace EburyPartners
 
         private void bGenerarInformeSemanal_Click(object sender, EventArgs e)
         {
+            string hora = DateTime.Now.ToString("u");
+
+            hora = hora.Replace(':', '.');
+
+            hora = hora.Remove(hora.Length - 1);
+
+            String nombre = "semanal " + hora;
             try
             {
 
@@ -147,27 +163,28 @@ namespace EburyPartners
                 }
                 else
                 {
+                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", nombre);
 
-                    string hora = DateTime.Now.ToString("u");
+                    sendMail(nombre);
 
-                    hora = hora.Replace(':', '.');
-
-                    hora = hora.Remove(hora.Length - 1);
-
-                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", "semanal "+hora);
-
-                    sendMail("semanal " + hora);
+                    File.Delete(Directory.GetCurrentDirectory() + @"\csvfiles\" + nombre + ".csv");
+                    Directory.Delete(Directory.GetCurrentDirectory() + @"\csvfiles");
 
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 0)");
 
                     tMessage.Text = "Se ha generado y enviado el informe csv semanal con éxito";
                 }
 
+                
+
             }
             catch (Exception ex)
             {
                 tMessage.Text = "ERROR: " + ex.Message;
             }
+
+            
+            
         }
 
         private void bBack_Click_1(object sender, EventArgs e)
