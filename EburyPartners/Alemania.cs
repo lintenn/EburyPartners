@@ -29,14 +29,14 @@ namespace EburyPartners
         private void sendMail(string name)
         {
             string path = Directory.GetCurrentDirectory() + @"\csvfiles\" + name + ".csv";
-            string to = "linten42@gmail.com";
-            string asunto = "Informe aleman " + name;
+            string to = "angelrodriguezmercado95@gmail.com";
+            string asunto = "Informe/reporte alemán " + name;
             string body = @"<style>
                             h1{color:dodgerblue;}
                             h2{color:darkorange;}
                             </style>
-                            <h1>Envio del informe aleman " + name + @"</h1></br>
-                            <h2>Saludos regulador aleman, aqui se le envia su informe/reporte requerido.</h2>";
+                            <h1>Envío del informe alemán " + name + @"</h1></br>
+                            <h2>Saludos regulador alemán, aquí se le envía su informe/reporte requerido.</h2>";
             string from = "eburypartnersgrupo01@outlook.es";
             string password = "cumplire_la_5amld";
             string displayName = "EburyPartner";
@@ -59,6 +59,11 @@ namespace EburyPartners
                 client.EnableSsl = true;
 
                 client.Send(mail);
+
+                client.Dispose();
+
+                mail.Dispose();
+
             }
             catch (Exception ex)
             {
@@ -94,7 +99,6 @@ namespace EburyPartners
 
                 File.AppendAllText(path, IBAN + "," + primer_nombre + "," + segundo_nombre + "," + calle + ","
                     + num_edificio + "," + ciudad + "," + codigo_postal + "," + pais + "," + DNI_NIF + "," + fecha_nacimiento + "\n");
-
             }
         }
 
@@ -107,15 +111,25 @@ namespace EburyPartners
 
                 if (miBD.Select("Select * From Registro_Informe Where es_inicial = 1;").Count() == 0)
                 {
-                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ", "inicial");
+                    string hora = DateTime.Now.ToString("u");
 
-                    sendMail("inicial");
+                    hora = hora.Replace(':', '.');
+
+                    hora = hora.Remove(hora.Length - 1);
+
+                    String nombre = "inicial " + hora;
+
+                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ", nombre);
+
+                    sendMail(nombre);
+
+                    File.Delete(Directory.GetCurrentDirectory() + @"\csvfiles\" + nombre + ".csv");
+                    Directory.Delete(Directory.GetCurrentDirectory() + @"\csvfiles");
 
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
 
-                    tMessage.Text = "Se ha generado el informe csv inicial con éxito";
-                }
-                else
+                    tMessage.Text = "Se ha generado y enviado el informe csv inicial con éxito";
+                } else
                 {
                     tMessage.Text = "ERROR: Ya hay un informe inicial generado";
                 }
@@ -130,6 +144,13 @@ namespace EburyPartners
 
         private void bGenerarInformeSemanal_Click(object sender, EventArgs e)
         {
+            string hora = DateTime.Now.ToString("u");
+
+            hora = hora.Replace(':', '.');
+
+            hora = hora.Remove(hora.Length - 1);
+
+            String nombre = "semanal " + hora;
             try
             {
 
@@ -141,25 +162,28 @@ namespace EburyPartners
                 }
                 else
                 {
+                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", nombre);
 
-                    string hora = DateTime.Now.ToString("u");
+                    sendMail(nombre);
 
-                    hora = hora.Replace(':', '.');
-
-                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", "semanal " + hora);
-
-                    sendMail("semanal " + hora);
+                    File.Delete(Directory.GetCurrentDirectory() + @"\csvfiles\" + nombre + ".csv");
+                    Directory.Delete(Directory.GetCurrentDirectory() + @"\csvfiles");
 
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 0)");
 
-                    tMessage.Text = "Se ha generado el informe csv semanal con éxito";
+                    tMessage.Text = "Se ha generado y enviado el informe csv semanal con éxito";
                 }
+
+                
 
             }
             catch (Exception ex)
             {
                 tMessage.Text = "ERROR: " + ex.Message;
             }
+
+            
+            
         }
 
         private void bBack_Click_1(object sender, EventArgs e)

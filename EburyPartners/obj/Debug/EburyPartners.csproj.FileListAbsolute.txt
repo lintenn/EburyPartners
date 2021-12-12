@@ -189,7 +189,15 @@ D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartn
 C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.FiltroClientes.resources
 C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\obj\Debug\EburyPartners.FiltroClientes.resources
 C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\obj\Debug\EburyPartners.HealthCheck.resources
+<<<<<<< HEAD
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\obj\Debug\EburyPartners.FiltroClientes.resources
+=======
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.FiltroClientes.resources
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.HealthCheck.resources
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.xml
+>>>>>>> Galo
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.dll
+C:\Users\angel\OneDrive\Escritorio\Universidad\3º\Ingeniería de Requisitos\Proyecto Ebury\Implementación\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\bin\Debug\Newtonsoft.Json.xml
