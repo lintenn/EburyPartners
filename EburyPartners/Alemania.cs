@@ -29,7 +29,7 @@ namespace EburyPartners
         private void sendMail(string name)
         {
             string path = Directory.GetCurrentDirectory() + @"\csvfiles\" + name + ".csv";
-            string to = "linten42@gmail.com";
+            string to = "angelrodriguezmercado95@gmail.com";
             string asunto = "Informe aleman " + name;
             string body = @"<style>
                             h1{color:dodgerblue;}
@@ -107,13 +107,19 @@ namespace EburyPartners
 
                 if (miBD.Select("Select * From Registro_Informe Where es_inicial = 1;").Count() == 0)
                 {
-                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ", "inicial");
+                    string hora = DateTime.Now.ToString("u");
+
+                    hora = hora.Replace(':', '.');
+
+                    hora = hora.Remove(hora.Length - 1);
+
+                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ", "inicial " + hora);
 
                     sendMail("inicial");
                     
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
 
-                    tMessage.Text = "Se ha generado el informe csv inicial con éxito";
+                    tMessage.Text = "Se ha generado y enviado el informe csv inicial con éxito";
                 } 
                 else
                 {
@@ -146,13 +152,15 @@ namespace EburyPartners
 
                     hora = hora.Replace(':', '.');
 
+                    hora = hora.Remove(hora.Length - 1);
+
                     generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", "semanal "+hora);
 
                     sendMail("semanal " + hora);
 
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 0)");
 
-                    tMessage.Text = "Se ha generado el informe csv semanal con éxito";
+                    tMessage.Text = "Se ha generado y enviado el informe csv semanal con éxito";
                 }
 
             }
