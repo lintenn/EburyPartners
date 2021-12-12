@@ -119,7 +119,7 @@ namespace EburyPartners
                     
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
 
-                    tMessage.Text = "Se ha generado el informe csv inicial con éxito";
+                    tMessage.Text = "Se ha generado y enviado el informe csv inicial con éxito";
                 } 
                 else
                 {
@@ -160,7 +160,7 @@ namespace EburyPartners
 
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 0)");
 
-                    tMessage.Text = "Se ha generado el informe csv semanal con éxito";
+                    tMessage.Text = "Se ha generado y enviado el informe csv semanal con éxito";
                 }
 
             }
