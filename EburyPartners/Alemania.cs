@@ -30,13 +30,13 @@ namespace EburyPartners
         {
             string path = Directory.GetCurrentDirectory() + @"\csvfiles\" + name + ".csv";
             string to = "angelrodriguezmercado95@gmail.com";
-            string asunto = "Informe aleman " + name;
+            string asunto = "Informe/reporte alemán " + name;
             string body = @"<style>
                             h1{color:dodgerblue;}
                             h2{color:darkorange;}
                             </style>
-                            <h1>Envio del informe aleman " + name + @"</h1></br>
-                            <h2>Saludos regulador aleman, aqui se le envia su informe/reporte requerido.</h2>";
+                            <h1>Envío del informe alemán " + name + @"</h1></br>
+                            <h2>Saludos regulador alemán, aquí se le envía su informe/reporte requerido.</h2>";
             string from = "eburypartnersgrupo01@outlook.es";
             string password = "cumplire_la_5amld";
             string displayName = "EburyPartner";
