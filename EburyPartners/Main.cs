@@ -36,7 +36,7 @@ namespace EburyPartners
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
-            
+
         }
     }
 }

@@ -75,7 +75,7 @@ namespace EburyPartners
 
             //string path = @"C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\bin\Debug\csvfiles\inicial.csv";
             string path = Directory.GetCurrentDirectory();
-            path = path + @"\csvfiles\"+name+".csv";
+            path = path + @"\csvfiles\" + name + ".csv";
 
             File.WriteAllText(path, "IBAN,primer nombre,segundo nombre,calle,numero edificio,ciudad,codigo postal,pais,DNI/NIF,fecha de nacimiento\n"); // creo el fichero csv vacío
 
@@ -110,11 +110,11 @@ namespace EburyPartners
                     generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND DATE_SUB(NOW(), INTERVAL 5 YEAR) <= P.fecha_cierre; ", "inicial");
 
                     sendMail("inicial");
-                    
+
                     miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
 
                     tMessage.Text = "Se ha generado el informe csv inicial con éxito";
-                } 
+                }
                 else
                 {
                     tMessage.Text = "ERROR: Ya hay un informe inicial generado";
@@ -125,7 +125,7 @@ namespace EburyPartners
             {
                 tMessage.Text = "ERROR: " + ex.Message;
             }
-            
+
         }
 
         private void bGenerarInformeSemanal_Click(object sender, EventArgs e)
@@ -146,7 +146,7 @@ namespace EburyPartners
 
                     hora = hora.Replace(':', '.');
 
-                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", "semanal "+hora);
+                    generarCSV("SELECT P.IBAN, C.primer_nombre, C.segundo_nombre, C.calle, C.num_edificio, C.ciudad, C.codigo_postal, C.pais_cliente, C.DNI_NIF, C.fecha_nacimiento FROM Producto P JOIN Propietarios PROP ON P.IBAN = PROP.IBAN JOIN Cliente C ON PROP.DNI_NIF = C.DNI_NIF WHERE P.pais = 'Alemania' AND P.estado = 'activa';", "semanal " + hora);
 
                     sendMail("semanal " + hora);
 

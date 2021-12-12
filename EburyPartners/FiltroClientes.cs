@@ -27,14 +27,14 @@ namespace EburyPartners
         {
             string consulta;
             string fecha;
-            string ano; 
+            string ano;
 
             ano = (Int32.Parse(DateTime.Now.ToString("yyyy")) - 3).ToString();
             fecha = DateTime.Now.ToString("MM-dd");
             fecha = ano + "-" + fecha;
 
             consulta = "SELECT * FROM Producto WHERE IBAN IN (SELECT IBAN FROM Propietarios WHERE DNI_NIF IN " +
-                "(SELECT DNI_NIF FROM Cliente WHERE DNI_NIF IS NOT NULL"; 
+                "(SELECT DNI_NIF FROM Cliente WHERE DNI_NIF IS NOT NULL";
 
             if (!t1Nombre.Text.Equals("Primer nombre")) consulta += " AND primer_nombre LIKE '%" + t1Nombre.Text + "%'";
             if (!t2Nombre.Text.Equals("Segundo nombre")) consulta += " AND segundo_nombre LIKE '%" + t2Nombre.Text + "%'";
