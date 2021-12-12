@@ -47,15 +47,16 @@ namespace BDLibrary
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
 
-                MySqlDataAdapter con = new MySqlDataAdapter(comando);          
+                MySqlDataAdapter con = new MySqlDataAdapter(comando);
                 DataSet ds = new DataSet();
                 con.Fill(ds);
 
                 dg.DataSource = ds.Tables[0];
-                
+
 
                 conexion.Close();
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }

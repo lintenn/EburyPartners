@@ -61,14 +61,14 @@
             // 
             // tMessage
             // 
-            this.tMessage.BackColor = System.Drawing.SystemColors.Control;
+            this.tMessage.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tMessage.Enabled = false;
-            this.tMessage.Location = new System.Drawing.Point(396, 559);
+            this.tMessage.Location = new System.Drawing.Point(387, 559);
             this.tMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tMessage.Multiline = true;
             this.tMessage.Name = "tMessage";
-            this.tMessage.Size = new System.Drawing.Size(415, 139);
+            this.tMessage.Size = new System.Drawing.Size(424, 30);
             this.tMessage.TabIndex = 2;
             // 
             // bBack

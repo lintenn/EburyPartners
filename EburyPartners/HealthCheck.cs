@@ -30,7 +30,7 @@ namespace EburyPartners
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String health="La conexión con la API está online";
+            String health = "La conexión con la API está online";
 
             try
             {
