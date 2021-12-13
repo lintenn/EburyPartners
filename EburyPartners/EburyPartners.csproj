@@ -94,6 +94,7 @@
   <ItemGroup>
     <Compile Include="BDLibrary.cs" />
     <Compile Include="ConsultaFltroCliente.cs" />
+    <Compile Include="ConsultaFltroCuenta.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Cuenta.cs" />
     <Compile Include="Error.cs" />
