@@ -50,7 +50,7 @@ namespace BDLibrary
                 MySqlDataAdapter con = new MySqlDataAdapter(comando);
                 DataSet ds = new DataSet();
                 con.Fill(ds);
-
+              
                 dg.DataSource = ds.Tables[0];
 
 

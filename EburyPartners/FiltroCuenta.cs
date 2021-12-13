@@ -69,7 +69,34 @@ namespace EburyPartners
                     hora = hora.Remove(hora.Length - 1);
 
                     string path = Directory.GetCurrentDirectory() + @"\jsonfiles\jsonfileCuentas " + hora + ".json";
-           
+
+
+                    for (int i = 0; i < dataGridView1.Rows.Count - 1; ++i)
+                    {
+                        for(int j=1; j<dataGridView1.Rows[i].Cells.Count; ++j)
+                        {
+                            if (dataGridView1.Rows[i].Cells[j].Value is DBNull)
+                            {
+                                if(j == 2 || j == 3)
+                                {
+                                  
+                                    DateTime tn = DateTime.Now;
+                                    tn = tn.AddDays(-(tn.Day-1));
+                                    tn = tn.AddMonths(-(tn.Month-1));
+                                    tn = tn.AddYears(-(tn.Year-1));
+                                    tn = tn.AddHours(-(tn.Hour));
+                                    tn = tn.AddMinutes(-(tn.Minute));
+                                    tn = tn.AddSeconds(-(tn.Second));
+
+                                    dataGridView1.Rows[i].Cells[j].Value = tn;
+                                }
+                                else if(j != 9 && j != 4)
+                                {
+                                    dataGridView1.Rows[i].Cells[j].Value = "No existente";
+                                }
+                            }
+                        }
+                    }
 
                     for (int i = 0; i < dataGridView1.Rows.Count - 1; ++i)
                     {

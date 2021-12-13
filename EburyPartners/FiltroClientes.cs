@@ -57,6 +57,31 @@ namespace EburyPartners
 
                 string path = Directory.GetCurrentDirectory() + @"\jsonfiles\jsonfileClientes " + hora + ".json";
 
+                for (int i = 0; i < dataGridClientes.Rows.Count - 1; ++i)
+                {
+                    for (int j = 1; j < dataGridClientes.Rows[i].Cells.Count; ++j)
+                    {
+                        if (dataGridClientes.Rows[i].Cells[j].Value is DBNull)
+                        {
+                            if (j == 19 || j == 3)
+                            {
+                                DateTime tn = DateTime.Now;
+                                tn = tn.AddDays(-(tn.Day - 1));
+                                tn = tn.AddMonths(-(tn.Month - 1));
+                                tn = tn.AddYears(-(tn.Year - 1));
+                                tn = tn.AddHours(-(tn.Hour));
+                                tn = tn.AddMinutes(-(tn.Minute));
+                                tn = tn.AddSeconds(-(tn.Second));
+
+                                dataGridClientes.Rows[i].Cells[j].Value = tn;
+                            }
+                            else
+                            {
+                                dataGridClientes.Rows[i].Cells[j].Value = "No existente";
+                            }
+                        }
+                    }
+                }
 
                 for (int i = 0; i < dataGridClientes.Rows.Count - 1; ++i)
                 {
