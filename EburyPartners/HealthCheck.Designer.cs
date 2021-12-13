@@ -97,7 +97,7 @@ namespace EburyPartners
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bEjecutar);
             this.Name = "HealthCheck";
-            this.Text = "Form1";
+            this.Text = "Health Check";
             this.Load += new System.EventHandler(this.HealthCheck_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
