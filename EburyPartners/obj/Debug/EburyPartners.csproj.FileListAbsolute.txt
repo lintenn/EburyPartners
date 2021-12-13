@@ -79,3 +79,4 @@ C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.CopyComplete
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
+C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.AssemblyReference.cache
