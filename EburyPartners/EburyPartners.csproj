@@ -116,6 +116,24 @@
     <Compile Include="Alemania.Designer.cs">
       <DependentUpon>Alemania.cs</DependentUpon>
     </Compile>
+    <Compile Include="Re-registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Re-registro.Designer.cs">
+      <DependentUpon>Re-registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="HealthCheck.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +163,9 @@
     <EmbeddedResource Include="FiltroCuenta.resx">
       <DependentUpon>FiltroCuenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HealthCheck.resx">
       <DependentUpon>HealthCheck.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +184,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Re-registro.resx">
+      <DependentUpon>Re-registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

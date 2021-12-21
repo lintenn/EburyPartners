@@ -79,6 +79,7 @@ C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.CopyComplete
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
+<<<<<<< HEAD
 C:\Users\Linten\Documents\GitHub\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.AssemblyReference.cache
 C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe.config
 C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\bin\Debug\EburyPartners.exe
@@ -120,3 +121,8 @@ C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\E
 C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.CopyComplete
 C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
 C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
+=======
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Inicio.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Registro.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Form1.resources
+>>>>>>> Galo
