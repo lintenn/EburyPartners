@@ -16,7 +16,7 @@ namespace EburyPartners
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EburyPartners());
+            Application.Run(new Inicio());
         }
     }
 }
