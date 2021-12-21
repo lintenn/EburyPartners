@@ -79,3 +79,6 @@ C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.csproj.CopyComplete
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
 C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Inicio.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Registro.resources
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Form1.resources

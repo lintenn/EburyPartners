@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,38 +10,32 @@ using System.Windows.Forms;
 
 namespace EburyPartners
 {
-    public partial class EburyPartners : Form
+    public partial class Inicio : Form
     {
-        public EburyPartners()
+        public Inicio()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Inicio_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void bAlemania_Click(object sender, EventArgs e)
+        private void bOtras_Click(object sender, EventArgs e)
         {
-            Alemania ventana = new Alemania();
+            EburyPartners ventana = new EburyPartners();
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
         }
 
-        private void bHolanda_Click(object sender, EventArgs e)
+        private void bRegistro_Click(object sender, EventArgs e)
         {
-            Holanda ventana = new Holanda();
+            Registro ventana = new Registro();
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
-
-        }
-
-        private void bBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
