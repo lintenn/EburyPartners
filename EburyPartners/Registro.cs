@@ -59,41 +59,41 @@ namespace EburyPartners
                 if (cbTipo.SelectedItem.ToString().Equals("Autónomo"))
                 {
                     lStatus.ForeColor = Color.Red;
-                    if (tDNI.Text == null)
+                    if (tDNI.Text.Equals(""))
                     {
                         lStatus.Text = "El campo DNI_NIF no puede estar vacío.";
-                    }else if(tNombre1 == null)
+                    }else if(tNombre1.Text.Equals(""))
                     {
                         lStatus.Text = "El campo Nombre no puede estar vacío.";
-                    }else if (tApellido1 == null)
+                    }else if (tApellido1.Text.Equals(""))
                     {
-                        lStatus.Text = "El campo Nombre no puede estar vacío.";
-                    }else if (dateTimePicker1.ToString().Equals(DateTime.MinValue.ToString()))
+                        lStatus.Text = "El campo Apellido no puede estar vacío.";
+                    }else if (dateTimePicker1.Value.ToShortDateString().Equals(DateTime.Now.ToShortDateString()))
                     {
                         lStatus.Text = "El campo Fecha no puede estar vacío.";
                     }
                     else
                     {
                         MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
-                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "','" + tNombre2.Text + "','" + tApellido1.Text + "','" + tApellido2.Text + "','" + dateTimePicker1.Text + "','" + tCalle.Text + "','" + tNumero.Text + "','" + tCiudad.Text + "','" + tCP.Text + "','" + tPais.Text + "','Activo','" + cbTipo.Text + "');");
-
+                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "','" + tNombre2.Text + "','" + tApellido1.Text + "','" + tApellido2.Text + "','" + dateTimePicker1.Value.ToShortDateString() + "','" + tCalle.Text + "','" + tNumero.Text + "','" + tCiudad.Text + "','" + tCP.Text + "','" + tPais.Text + "','Activo','" + cbTipo.Text + "');");
+          
                         lStatus.ForeColor = Color.Black;
-                        lStatus.Text = "Cliente registrado correctamente";
+                        lStatus.Text = "Cliente registrado correctamente en el sistema.";
                     }
 
                 }
                 else
                 {
                     lStatus.ForeColor = Color.Red;
-                    if (tDNI == null)
+                    if (tDNI.Text.Equals(""))
                     {
                         lStatus.Text = "El campo DNI_NIF no puede estar vacío.";
                     }
-                    else if (tNombre1 == null)
+                    else if (tNombre1.Text.Equals(""))
                     {
                         lStatus.Text = "El campo Nombre no puede estar vacío.";
                     }
-                    else if (dateTimePicker1.ToString().Equals(DateTime.MinValue.ToString()))
+                    else if (dateTimePicker1.Value.ToShortDateString().Equals(DateTime.Now.ToShortDateString()))
                     {
                         lStatus.Text = "El campo Fecha no puede estar vacío.";
                     }
@@ -103,7 +103,7 @@ namespace EburyPartners
                         miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "','" + tNombre2.Text + "','" + tApellido1.Text + "','" + tApellido2.Text + "','" + dateTimePicker1.Text + "','" + tCalle.Text + "','" + tNumero.Text + "','" + tCiudad.Text + "','" + tCP.Text + "','" + tPais.Text + "','Activo','" + cbTipo.Text + "');");
 
                         lStatus.ForeColor = Color.Black;
-                        lStatus.Text = "Cliente registrado correctamente";
+                        lStatus.Text = "Cliente registrado correctamente en el sistema.";
                     }
                 }   
 

@@ -344,8 +344,9 @@
             // 
             // lStatus
             // 
+            this.lStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lStatus.AutoSize = true;
-            this.lStatus.Location = new System.Drawing.Point(340, 402);
+            this.lStatus.Location = new System.Drawing.Point(307, 402);
             this.lStatus.Name = "lStatus";
             this.lStatus.Size = new System.Drawing.Size(0, 13);
             this.lStatus.TabIndex = 38;
