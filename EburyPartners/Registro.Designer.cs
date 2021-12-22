@@ -148,7 +148,7 @@
             // 
             // tNombre1
             // 
-            this.tNombre1.ForeColor = System.Drawing.Color.Silver;
+            this.tNombre1.ForeColor = System.Drawing.Color.Black;
             this.tNombre1.Location = new System.Drawing.Point(200, 155);
             this.tNombre1.Name = "tNombre1";
             this.tNombre1.Size = new System.Drawing.Size(166, 20);
@@ -156,7 +156,7 @@
             // 
             // tApellido2
             // 
-            this.tApellido2.ForeColor = System.Drawing.Color.Silver;
+            this.tApellido2.ForeColor = System.Drawing.Color.Black;
             this.tApellido2.Location = new System.Drawing.Point(201, 273);
             this.tApellido2.Name = "tApellido2";
             this.tApellido2.Size = new System.Drawing.Size(166, 20);
@@ -164,7 +164,7 @@
             // 
             // tApellido1
             // 
-            this.tApellido1.ForeColor = System.Drawing.Color.Silver;
+            this.tApellido1.ForeColor = System.Drawing.Color.Black;
             this.tApellido1.Location = new System.Drawing.Point(200, 235);
             this.tApellido1.Name = "tApellido1";
             this.tApellido1.Size = new System.Drawing.Size(166, 20);
@@ -172,7 +172,7 @@
             // 
             // tNombre2
             // 
-            this.tNombre2.ForeColor = System.Drawing.Color.Silver;
+            this.tNombre2.ForeColor = System.Drawing.Color.Black;
             this.tNombre2.Location = new System.Drawing.Point(200, 195);
             this.tNombre2.Name = "tNombre2";
             this.tNombre2.Size = new System.Drawing.Size(166, 20);
@@ -214,7 +214,7 @@
             // 
             // tCP
             // 
-            this.tCP.ForeColor = System.Drawing.Color.Silver;
+            this.tCP.ForeColor = System.Drawing.Color.Black;
             this.tCP.Location = new System.Drawing.Point(524, 155);
             this.tCP.Name = "tCP";
             this.tCP.Size = new System.Drawing.Size(166, 20);
@@ -222,7 +222,7 @@
             // 
             // tCiudad
             // 
-            this.tCiudad.ForeColor = System.Drawing.Color.Silver;
+            this.tCiudad.ForeColor = System.Drawing.Color.Black;
             this.tCiudad.Location = new System.Drawing.Point(524, 195);
             this.tCiudad.Name = "tCiudad";
             this.tCiudad.Size = new System.Drawing.Size(166, 20);
@@ -230,7 +230,7 @@
             // 
             // tCalle
             // 
-            this.tCalle.ForeColor = System.Drawing.Color.Silver;
+            this.tCalle.ForeColor = System.Drawing.Color.Black;
             this.tCalle.Location = new System.Drawing.Point(524, 235);
             this.tCalle.Name = "tCalle";
             this.tCalle.Size = new System.Drawing.Size(166, 20);
@@ -247,7 +247,7 @@
             // 
             // tPais
             // 
-            this.tPais.ForeColor = System.Drawing.Color.Silver;
+            this.tPais.ForeColor = System.Drawing.Color.Black;
             this.tPais.Location = new System.Drawing.Point(524, 117);
             this.tPais.Name = "tPais";
             this.tPais.Size = new System.Drawing.Size(166, 20);
@@ -264,7 +264,7 @@
             // 
             // tNumero
             // 
-            this.tNumero.ForeColor = System.Drawing.Color.Silver;
+            this.tNumero.ForeColor = System.Drawing.Color.Black;
             this.tNumero.Location = new System.Drawing.Point(524, 273);
             this.tNumero.Name = "tNumero";
             this.tNumero.Size = new System.Drawing.Size(166, 20);
@@ -272,7 +272,7 @@
             // 
             // tDNI
             // 
-            this.tDNI.ForeColor = System.Drawing.Color.Silver;
+            this.tDNI.ForeColor = System.Drawing.Color.Black;
             this.tDNI.Location = new System.Drawing.Point(200, 117);
             this.tDNI.Name = "tDNI";
             this.tDNI.Size = new System.Drawing.Size(166, 20);
