@@ -50,6 +50,22 @@ namespace EburyPartners
                 tApellido1.Enabled = false;
                 tApellido2.Enabled = false; 
             }
+            vaciarCampos();
+        }
+
+        private void vaciarCampos()
+        {
+            tNombre1.Text = "";
+            tNombre2.Text = "";
+            tApellido1.Text = "";
+            tApellido2.Text = "";
+            tDNI.Text = "";
+            tCiudad.Text = "";
+            tPais.Text = "";
+            tCalle.Text = "";
+            tNumero.Text = "";
+            tCP.Text = "";
+            dateTimePicker1.Value = DateTime.Now;
         }
 
         private void bRegistro_Click(object sender, EventArgs e)
@@ -74,9 +90,47 @@ namespace EburyPartners
                     }
                     else
                     {
+
+                        string n2 = "'" + tNombre2.Text + "'";
+                        string a2 = "'" + tApellido2.Text + "'";
+                        string calle = "'" + tCalle.Text + "'";
+                        string pais = "'" + tPais.Text + "'";
+                        string n = "'" + tNumero.Text + "'";
+                        string ciudad = "'" + tCiudad.Text + "'";
+                        string cp = "'" + tCP.Text + "'";
+
+                        if (tNombre2.Text.Equals(""))
+                        {
+                            n2 = "NULL";
+                        }
+                        if (tApellido2.Text.Equals(""))
+                        {
+                            a2 = "NULL";
+                        }
+                        if (tCalle.Text.Equals(""))
+                        {
+                            calle = "NULL";
+                        }
+                        if (tPais.Text.Equals(""))
+                        {
+                            pais = "NULL";   
+                        }
+                        if (tNumero.Text.Equals(""))
+                        {
+                            n = "NULL"; 
+                        }
+                        if (tCiudad.Text.Equals(""))
+                        {
+                            ciudad = "NULL";
+                        }
+                        if (tCP.Text.Equals(""))
+                        {
+                            cp = "NULL";
+                        }
+
                         MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
-                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "','" + tNombre2.Text + "','" + tApellido1.Text + "','" + tApellido2.Text + "','" + dateTimePicker1.Value.ToShortDateString() + "','" + tCalle.Text + "','" + tNumero.Text + "','" + tCiudad.Text + "','" + tCP.Text + "','" + tPais.Text + "','Activo','" + cbTipo.Text + "');");
-          
+                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "'," + n2  + ",'" +  tApellido1.Text + "'," + a2 + ",'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','" + cbTipo.Text + "');");
+                        
                         lStatus.ForeColor = Color.Black;
                         lStatus.Text = "Cliente registrado correctamente en el sistema.";
                     }
@@ -99,8 +153,37 @@ namespace EburyPartners
                     }
                     else
                     {
+
+                        string calle = "'" + tCalle.Text + "'";
+                        string pais = "'" + tPais.Text + "'";
+                        string n = "'" + tNumero.Text + "'";
+                        string ciudad = "'" + tCiudad.Text + "'";
+                        string cp = "'" + tCP.Text + "'";
+
+                      
+                        if (tCalle.Text.Equals(""))
+                        {
+                            calle = "NULL";
+                        }
+                        if (tPais.Text.Equals(""))
+                        {
+                            pais = "NULL";
+                        }
+                        if (tNumero.Text.Equals(""))
+                        {
+                            n = "NULL";
+                        }
+                        if (tCiudad.Text.Equals(""))
+                        {
+                            ciudad = "NULL";
+                        }
+                        if (tCP.Text.Equals(""))
+                        {
+                            cp = "NULL";
+                        }
+
                         MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
-                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "','" + tNombre2.Text + "','" + tApellido1.Text + "','" + tApellido2.Text + "','" + dateTimePicker1.Text + "','" + tCalle.Text + "','" + tNumero.Text + "','" + tCiudad.Text + "','" + tCP.Text + "','" + tPais.Text + "','Activo','" + cbTipo.Text + "');");
+                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "',NULL,NULL,NULL,'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','" + cbTipo.Text + "');");
 
                         lStatus.ForeColor = Color.Black;
                         lStatus.Text = "Cliente registrado correctamente en el sistema.";
@@ -110,7 +193,7 @@ namespace EburyPartners
             }catch (Exception ex)
             {
                 lStatus.ForeColor = Color.Red;
-                lStatus.Text = "Error al registrar el cliente";
+                lStatus.Text = "           Error al registrar el cliente";
             }
         }
     }
