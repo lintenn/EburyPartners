@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BDLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,105 @@ namespace EburyPartners
 {
     public partial class Registro : Form
     {
+
+        private const string SERVER = "eburyrequisitos.cobadwnzalab.eu-central-1.rds.amazonaws.com";
+        private const string BD = "grupo01DB";
+        private const string USER = "grupo01";
+        private const string PWD = "nsB79maupU4rELd4";
+
         public Registro()
         {
             InitializeComponent();
+            cbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbTipo.Text = "Autónomo";
         }
 
         private void bBack_Click(object sender, EventArgs e)
         {
             this.Close(); 
+        }
+
+        private void cbTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbTipo.SelectedIndex == 0)
+            {
+                lr3.Text = "*";
+                lFecha.Text = "Fecha de nacimiento:";
+                tNombre2.Enabled = true;
+                tApellido1.Enabled = true;
+                tApellido2.Enabled = true;
+            }
+            else
+            {
+               
+                lr3.Text = "";
+                lFecha.Text = "   Fecha de creación:";
+                tNombre2.Enabled = false;
+                tApellido1.Enabled = false;
+                tApellido2.Enabled = false; 
+            }
+        }
+
+        private void bRegistro_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbTipo.SelectedItem.ToString().Equals("Autónomo"))
+                {
+                    lStatus.ForeColor = Color.Red;
+                    if (tDNI.Text == null)
+                    {
+                        lStatus.Text = "El campo DNI_NIF no puede estar vacío.";
+                    }else if(tNombre1 == null)
+                    {
+                        lStatus.Text = "El campo Nombre no puede estar vacío.";
+                    }else if (tApellido1 == null)
+                    {
+                        lStatus.Text = "El campo Nombre no puede estar vacío.";
+                    }else if (dateTimePicker1.ToString().Equals(DateTime.MinValue.ToString()))
+                    {
+                        lStatus.Text = "El campo Fecha no puede estar vacío.";
+                    }
+                    else
+                    {
+                        MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
+                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "','" + tNombre2.Text + "','" + tApellido1.Text + "','" + tApellido2.Text + "','" + dateTimePicker1.Text + "','" + tCalle.Text + "','" + tNumero.Text + "','" + tCiudad.Text + "','" + tCP.Text + "','" + tPais.Text + "','Activo','" + cbTipo.Text + "');");
+
+                        lStatus.ForeColor = Color.Black;
+                        lStatus.Text = "Cliente registrado correctamente";
+                    }
+
+                }
+                else
+                {
+                    lStatus.ForeColor = Color.Red;
+                    if (tDNI == null)
+                    {
+                        lStatus.Text = "El campo DNI_NIF no puede estar vacío.";
+                    }
+                    else if (tNombre1 == null)
+                    {
+                        lStatus.Text = "El campo Nombre no puede estar vacío.";
+                    }
+                    else if (dateTimePicker1.ToString().Equals(DateTime.MinValue.ToString()))
+                    {
+                        lStatus.Text = "El campo Fecha no puede estar vacío.";
+                    }
+                    else
+                    {
+                        MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
+                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "','" + tNombre2.Text + "','" + tApellido1.Text + "','" + tApellido2.Text + "','" + dateTimePicker1.Text + "','" + tCalle.Text + "','" + tNumero.Text + "','" + tCiudad.Text + "','" + tCP.Text + "','" + tPais.Text + "','Activo','" + cbTipo.Text + "');");
+
+                        lStatus.ForeColor = Color.Black;
+                        lStatus.Text = "Cliente registrado correctamente";
+                    }
+                }   
+
+            }catch (Exception ex)
+            {
+                lStatus.ForeColor = Color.Red;
+                lStatus.Text = "Error al registrar el cliente";
+            }
         }
     }
 }
