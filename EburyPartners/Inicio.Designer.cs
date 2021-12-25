@@ -48,6 +48,7 @@
             this.bReRegistro.TabIndex = 2;
             this.bReRegistro.Text = "Re-registro";
             this.bReRegistro.UseVisualStyleBackColor = true;
+            this.bReRegistro.Click += new System.EventHandler(this.bReRegistro_Click);
             // 
             // bOtras
             // 

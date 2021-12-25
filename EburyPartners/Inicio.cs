@@ -37,5 +37,13 @@ namespace EburyPartners
             ventana.ShowDialog();
             this.Visible = true;
         }
+
+        private void bReRegistro_Click(object sender, EventArgs e)
+        {
+            Reregistro ventana = new Reregistro();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

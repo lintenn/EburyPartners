@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EburyPartners
 {
-    public partial class Form1 : Form
+    public partial class Reregistro : Form
     {
-        public Form1()
+        public Reregistro()
         {
             InitializeComponent();
         }

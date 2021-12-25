@@ -1,6 +1,6 @@
 ﻿namespace EburyPartners
 {
-    partial class Form1
+    partial class Reregistro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reregistro));
             this.bBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 

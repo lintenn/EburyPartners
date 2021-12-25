@@ -170,3 +170,4 @@ D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartn
 D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.csproj.CopyComplete
 D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.exe
 D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.pdb
+C:\Users\Galo\source\repos\Ebury Partners\EburyPartners\EburyPartners\obj\Debug\EburyPartners.Reregistro.resources
