@@ -88,6 +88,10 @@ namespace EburyPartners
                     {
                         lStatus.Text = "El campo Fecha no puede estar vacío.";
                     }
+                    else if (DateTime.Compare(dateTimePicker1.Value.AddYears(18),DateTime.Now) > 0)
+                    {
+                        lStatus.Text = "    Debe tener al menos 18 años.";
+                    }
                     else
                     {
 
@@ -190,7 +194,7 @@ namespace EburyPartners
                     }
                 }   
 
-            }catch (Exception ex)
+            }catch (Exception)
             {
                 lStatus.ForeColor = Color.Red;
                 lStatus.Text = "           Error al registrar el cliente";

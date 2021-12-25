@@ -36,6 +36,8 @@
             // 
             // bAlemania
             // 
+            this.bAlemania.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bAlemania.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bAlemania.Location = new System.Drawing.Point(447, 188);
             this.bAlemania.Name = "bAlemania";
@@ -47,6 +49,8 @@
             // 
             // bHolanda
             // 
+            this.bHolanda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.bHolanda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bHolanda.Location = new System.Drawing.Point(162, 188);
             this.bHolanda.Name = "bHolanda";
@@ -58,6 +62,7 @@
             // 
             // bBack
             // 
+            this.bBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bBack.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.bBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bBack.Cursor = System.Windows.Forms.Cursors.Default;
