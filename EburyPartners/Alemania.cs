@@ -26,6 +26,20 @@ namespace EburyPartners
             InitializeComponent();
         }
 
+        private void guardarRealizacion(MYSQLDB miBD, bool esInicial)
+        {
+            try
+            {
+                miBD.Insert("Insert into Registro_Informe values (NOW(), " + (esInicial ? 1 : 0) + ");");
+            }
+            catch (Exception)
+            {
+                tMessage.Text = "ERROR: Se ha perdido la conexión para el guardado de la realización del primer informe. Intentando reestablecer la conexión...";
+
+                guardarRealizacion(miBD, esInicial);
+            }
+        }
+
         private void sendMail(string name)
         {
             string path = Directory.GetCurrentDirectory() + @"\csvfiles\" + name + ".csv";
@@ -126,7 +140,7 @@ namespace EburyPartners
                     File.Delete(Directory.GetCurrentDirectory() + @"\csvfiles\" + nombre + ".csv");
                     Directory.Delete(Directory.GetCurrentDirectory() + @"\csvfiles");
 
-                    miBD.Insert("Insert into Registro_Informe values (NOW(), 1)");
+                    guardarRealizacion(miBD, true);
 
                     tMessage.Text = "Se ha generado y enviado el informe csv inicial con éxito";
                 } else
@@ -169,7 +183,7 @@ namespace EburyPartners
                     File.Delete(Directory.GetCurrentDirectory() + @"\csvfiles\" + nombre + ".csv");
                     Directory.Delete(Directory.GetCurrentDirectory() + @"\csvfiles");
 
-                    miBD.Insert("Insert into Registro_Informe values (NOW(), 0)");
+                    guardarRealizacion(miBD, false);
 
                     tMessage.Text = "Se ha generado y enviado el informe csv semanal con éxito";
                 }
