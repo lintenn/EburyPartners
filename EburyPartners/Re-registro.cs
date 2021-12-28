@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BDLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +11,65 @@ using System.Windows.Forms;
 
 namespace EburyPartners
 {
-    public partial class Form1 : Form
+    public partial class Reregistro : Form
     {
-        public Form1()
+
+        private const string SERVER = "eburyrequisitos.cobadwnzalab.eu-central-1.rds.amazonaws.com";
+        private const string BD = "grupo01DB";
+        private const string USER = "grupo01";
+        private const string PWD = "nsB79maupU4rELd4";
+
+        public Reregistro()
         {
             InitializeComponent();
+            actualizarDatagrid();
         }
 
         private void bBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+        
+                    Formulario ventana = new Formulario((string)dataGridView1.SelectedRows[0].Cells[0].Value);
+                    this.Visible = false;
+                    ventana.ShowDialog();
+                    this.Visible = true;
+                    
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR: " + ex.Message);
+            }
+
+        }
+
+        private void bRegistro_MouseClick(object sender, MouseEventArgs e)
+        {
+            actualizarDatagrid();
+        }
+
+        private void actualizarDatagrid()
+        {
+            try
+            {
+                string consulta = "SELECT * FROM Cliente WHERE estado='Inactivo';";
+
+                MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
+                miBD.mostrarDataGrid(dataGridView1, consulta);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
