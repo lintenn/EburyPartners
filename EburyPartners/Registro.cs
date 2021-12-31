@@ -24,6 +24,8 @@ namespace EburyPartners
             InitializeComponent();
             cbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
             cbTipo.Text = "Autónomo";
+            cbCuenta.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbCuenta.Text = "Pooled";
         }
 
         private void bBack_Click(object sender, EventArgs e)

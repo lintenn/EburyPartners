@@ -60,6 +60,8 @@
             this.lr3 = new System.Windows.Forms.Label();
             this.lr4 = new System.Windows.Forms.Label();
             this.lStatus = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbCuenta = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // bBack
@@ -90,7 +92,7 @@
             this.cbTipo.Items.AddRange(new object[] {
             "Autónomo",
             "Empresa"});
-            this.cbTipo.Location = new System.Drawing.Point(357, 63);
+            this.cbTipo.Location = new System.Drawing.Point(262, 62);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(121, 21);
             this.cbTipo.TabIndex = 7;
@@ -102,7 +104,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(286, 66);
+            this.label1.Location = new System.Drawing.Point(191, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 8;
@@ -411,12 +413,41 @@
             this.lStatus.Size = new System.Drawing.Size(0, 13);
             this.lStatus.TabIndex = 38;
             // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(418, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 13);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "Tipo cuenta:";
+            // 
+            // cbCuenta
+            // 
+            this.cbCuenta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbCuenta.FormattingEnabled = true;
+            this.cbCuenta.Items.AddRange(new object[] {
+            "Pooled",
+            "Segregada",
+            "Dedicada"});
+            this.cbCuenta.Location = new System.Drawing.Point(489, 62);
+            this.cbCuenta.Name = "cbCuenta";
+            this.cbCuenta.Size = new System.Drawing.Size(121, 21);
+            this.cbCuenta.TabIndex = 39;
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cbCuenta);
             this.Controls.Add(this.lStatus);
             this.Controls.Add(this.lr4);
             this.Controls.Add(this.lr3);
@@ -488,5 +519,7 @@
         private System.Windows.Forms.Label lr3;
         private System.Windows.Forms.Label lr4;
         private System.Windows.Forms.Label lStatus;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbCuenta;
     }
 }
