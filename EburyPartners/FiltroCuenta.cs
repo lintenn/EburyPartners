@@ -27,11 +27,6 @@ namespace EburyPartners
             cbActivas.Text = "Todas";
         }
 
-        private void cbActivas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void bBuscar_Click(object sender, EventArgs e)
         {
             string consulta;

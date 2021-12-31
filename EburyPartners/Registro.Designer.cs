@@ -212,7 +212,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 13);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Codigo Postal:";
+            this.label7.Text = "Código Postal:";
             // 
             // label8
             // 
