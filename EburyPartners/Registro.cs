@@ -219,7 +219,6 @@ namespace EburyPartners
             {
                 lStatus.ForeColor = Color.Red;
                 lStatus.Text = "           Error al registrar el cliente";
-                MessageBox.Show(ex.Message);
             }
         }
     }
