@@ -24,6 +24,8 @@ namespace EburyPartners
             InitializeComponent();
             cbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
             cbTipo.Text = "Autónomo";
+            cbCuenta.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbCuenta.Text = "Pooled";
         }
 
         private void bBack_Click(object sender, EventArgs e)
@@ -133,10 +135,21 @@ namespace EburyPartners
                         }
 
                         MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
-                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "'," + n2  + ",'" +  tApellido1.Text + "'," + a2 + ",'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','" + cbTipo.Text + "');");
-                        
-                        lStatus.ForeColor = Color.Black;
-                        lStatus.Text = "Cliente registrado correctamente en el sistema.";
+
+                        Object[] tupla =miBD.Select("SELECT * FROM Cliente WHERE DNI_NIF='" + tDNI.Text + "';")[0];
+                     
+                        if (tupla[0] != null)
+                        {
+                            lStatus.Text = "    Cliente ya existente en el sistema.";
+                        }
+                        else
+                        {
+
+                            miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "'," + n2 + ",'" + tApellido1.Text + "'," + a2 + ",'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','" + cbTipo.Text + "');");
+
+                            lStatus.ForeColor = Color.Black;
+                            lStatus.Text = "Cliente registrado correctamente en el sistema.";
+                        }
                     }
 
                 }
@@ -187,17 +200,27 @@ namespace EburyPartners
                         }
 
                         MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
-                        miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "',NULL,NULL,NULL,'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','" + cbTipo.Text + "');");
+                        Object[] tupla = miBD.Select("SELECT * FROM Cliente WHERE DNI_NIF='" + tDNI.Text + "';")[0];
+                
+                        if (tupla[0] != null)
+                        {
+                            lStatus.Text = "    Cliente ya existente en el sistema.";
+                        }
+                        else
+                        {
 
-                        lStatus.ForeColor = Color.Black;
-                        lStatus.Text = "Cliente registrado correctamente en el sistema.";
+                            miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "',NULL,NULL,NULL,'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','" + cbTipo.Text + "');");
+
+                            lStatus.ForeColor = Color.Black;
+                            lStatus.Text = "Cliente registrado correctamente en el sistema.";
+                        }
                     }
                 }   
 
-            }catch (Exception)
+            }catch (Exception ex)
             {
                 lStatus.ForeColor = Color.Red;
-                lStatus.Text = "           Error al registrar el cliente";
+                lStatus.Text = "           Error al registrar el cliente.";
             }
         }
     }

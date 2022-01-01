@@ -87,7 +87,6 @@
             this.cbActivas.Name = "cbActivas";
             this.cbActivas.Size = new System.Drawing.Size(121, 21);
             this.cbActivas.TabIndex = 4;
-            this.cbActivas.SelectedIndexChanged += new System.EventHandler(this.cbActivas_SelectedIndexChanged);
             // 
             // bBack
             // 
