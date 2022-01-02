@@ -93,6 +93,7 @@ namespace EburyPartners
                 if (tDNI.Text.Equals("")) lStatus.Text = "El campo DNI_NIF no puede estar vacío.";
                 else if (tNombre1.Text.Equals("")) lStatus.Text = "El campo Nombre no puede estar vacío.";
                 else if (cbTipo.SelectedItem.ToString().Equals("Autónomo") && tApellido1.Text.Equals("")) lStatus.Text = "El campo Primer apellido no puede estar vacío.";
+                else if (DateTime.Compare(dateTimePicker1.Value.AddYears(18), DateTime.Now) > 0) lStatus.Text = "El cliente debe tener al menos 18 años.";
                 else
                 {
                     if (cbTipo.SelectedItem.ToString().Equals("Autónomo"))
