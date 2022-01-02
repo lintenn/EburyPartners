@@ -116,6 +116,12 @@
     <Compile Include="Alemania.Designer.cs">
       <DependentUpon>Alemania.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarEstadoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarEstadoCliente.Designer.cs">
+      <DependentUpon>ModificarEstadoCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FiltroCuenta.resx">
       <DependentUpon>FiltroCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEstadoCliente.resx">
+      <DependentUpon>ModificarEstadoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario.resx">
       <DependentUpon>Formulario.cs</DependentUpon>
