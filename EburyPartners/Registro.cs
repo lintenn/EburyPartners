@@ -136,9 +136,13 @@ namespace EburyPartners
 
                         MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
 
-                        Object[] tupla =miBD.Select("SELECT * FROM Cliente WHERE DNI_NIF='" + tDNI.Text + "';")[0];
+                        bool esta = false;
                      
-                        if (tupla[0] != null)
+                        foreach(Object[] t in miBD.Select("SELECT * FROM Cliente WHERE DNI_NIF='" + tDNI.Text + "';")){
+                                esta = true;
+                        }
+
+                        if (esta)
                         {
                             lStatus.Text = "    Cliente ya existente en el sistema.";
                         }
@@ -200,9 +204,15 @@ namespace EburyPartners
                         }
 
                         MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
-                        Object[] tupla = miBD.Select("SELECT * FROM Cliente WHERE DNI_NIF='" + tDNI.Text + "';")[0];
-                
-                        if (tupla[0] != null)
+
+                        bool esta = false;
+
+                        foreach (Object[] t in miBD.Select("SELECT * FROM Cliente WHERE DNI_NIF='" + tDNI.Text + "';"))
+                        {
+                            esta = true;
+                        }
+
+                        if (esta)
                         {
                             lStatus.Text = "    Cliente ya existente en el sistema.";
                         }
@@ -221,6 +231,7 @@ namespace EburyPartners
             {
                 lStatus.ForeColor = Color.Red;
                 lStatus.Text = "           Error al registrar el cliente.";
+                MessageBox.Show(ex.Message);
             }
         }
     }
