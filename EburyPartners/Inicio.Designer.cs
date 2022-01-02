@@ -84,6 +84,7 @@
             this.bModDatosClientes.TabIndex = 5;
             this.bModDatosClientes.Text = "Modificar datos de clientes";
             this.bModDatosClientes.UseVisualStyleBackColor = true;
+            this.bModDatosClientes.Click += new System.EventHandler(this.bModDatosClientes_Click);
             // 
             // bModEstadoClientes
             // 
