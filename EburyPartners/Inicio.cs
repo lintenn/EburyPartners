@@ -38,5 +38,13 @@ namespace EburyPartners
             ventana.ShowDialog();
             this.Visible = true;
         }
+
+        private void bModEstadoClientes_Click(object sender, EventArgs e)
+        {
+            ModificarEstadoCliente ventana = new ModificarEstadoCliente();
+            this.Visible=false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
