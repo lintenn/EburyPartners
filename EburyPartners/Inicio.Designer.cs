@@ -84,6 +84,7 @@
             this.bModDatosClientes.TabIndex = 5;
             this.bModDatosClientes.Text = "Modificar datos de clientes";
             this.bModDatosClientes.UseVisualStyleBackColor = true;
+            this.bModDatosClientes.Click += new System.EventHandler(this.bModDatosClientes_Click);
             // 
             // bModEstadoClientes
             // 
@@ -95,6 +96,7 @@
             this.bModEstadoClientes.TabIndex = 6;
             this.bModEstadoClientes.Text = "Modificar estado de clientes";
             this.bModEstadoClientes.UseVisualStyleBackColor = true;
+            this.bModEstadoClientes.Click += new System.EventHandler(this.bModEstadoClientes_Click);
             // 
             // bAsociarCuentas
             // 
@@ -128,6 +130,7 @@
             this.bModAutorizados.TabIndex = 9;
             this.bModAutorizados.Text = "Modificar autorizados a cuentas bancarias";
             this.bModAutorizados.UseVisualStyleBackColor = true;
+            this.bModAutorizados.Click += new System.EventHandler(this.bModAutorizados_Click);
             // 
             // Inicio
             // 
