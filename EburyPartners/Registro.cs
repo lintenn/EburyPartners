@@ -227,7 +227,7 @@ namespace EburyPartners
                     }
                 }   
 
-            }catch (Exception)
+            }catch (Exception ex)
             {
                 lStatus.ForeColor = Color.Red;
                 lStatus.Text = "           Error al registrar el cliente.";

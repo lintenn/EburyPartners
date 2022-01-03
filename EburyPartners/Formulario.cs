@@ -127,7 +127,11 @@ namespace EburyPartners
                         {
                             miBD.Update("UPDATE Cliente SET primer_apellido ='" + tApellido1.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
-                        
+                        if (!(tupla[3] is DBNull) && !tApellido1.Text.Equals(""))
+                        {
+                            miBD.Update("UPDATE Cliente SET primer_apellido ='" + tApellido1.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
+
                         if (!(tupla[4] is DBNull) && !tApellido2.Text.Equals((string)tupla[4]))
                         {
                             miBD.Update("UPDATE Cliente SET segundo_apellido ='" + tApellido2.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
@@ -141,23 +145,43 @@ namespace EburyPartners
                         {
                             miBD.Update("UPDATE Cliente SET calle ='" + tCalle.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
-                        
+                        if ((tupla[6] is DBNull) && !tCalle.Text.Equals(""))
+                        {
+                            miBD.Update("UPDATE Cliente SET calle ='" + tCalle.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
+
                         if (!(tupla[7] is DBNull) && !tNumero.Text.Equals((string)tupla[7]))
                         {
                             miBD.Update("UPDATE Cliente SET num_edificio ='" + tNumero.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
-                        
+                        if ((tupla[7] is DBNull) && !tNumero.Text.Equals(""))
+                        {
+                            miBD.Update("UPDATE Cliente SET num_edificio ='" + tNumero.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
+
                         if (!(tupla[8] is DBNull) && !tCiudad.Text.Equals((string)tupla[8]))
                         {
                             miBD.Update("UPDATE Cliente SET ciudad ='" + tCiudad.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
-                        
-                        if (!(tupla[9] is DBNull) && !tCP.Text.Equals((string)tupla[9]))
+                        if ((tupla[8] is DBNull) && !tCiudad.Text.Equals(""))
+                        {
+                            miBD.Update("UPDATE Cliente SET ciudad ='" + tCiudad.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
+
+                        if (!(tupla[9] is DBNull) && !tCP.Text.Equals((string)tupla[9]) && !tCP.Text.Equals(""))
                         {
                             miBD.Update("UPDATE Cliente SET codigo_postal ='" + tCP.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
-                        
+                        if ((tupla[9] is DBNull) && !tCP.Text.Equals(""))
+                        {
+                            miBD.Update("UPDATE Cliente SET codigo_postal ='" + tCP.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
+
                         if (!(tupla[10] is DBNull) && !tPais.Text.Equals((string)tupla[10]))
+                        {
+                            miBD.Update("UPDATE Cliente SET pais_cliente ='" + tPais.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
+                        if ((tupla[10] is DBNull) && !tPais.Text.Equals(""))
                         {
                             miBD.Update("UPDATE Cliente SET pais_cliente ='" + tPais.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
@@ -221,8 +245,16 @@ namespace EburyPartners
                         {
                             miBD.Update("UPDATE Cliente SET calle ='" + tCalle.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
+                        if ((tupla[6] is DBNull) && !tCalle.Text.Equals(""))
+                        {
+                            miBD.Update("UPDATE Cliente SET calle ='" + tCalle.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
 
                         if (!(tupla[7] is DBNull) && !tNumero.Text.Equals((string)tupla[7]))
+                        {
+                            miBD.Update("UPDATE Cliente SET num_edificio ='" + tNumero.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
+                        if ((tupla[7] is DBNull) && !tNumero.Text.Equals(""))
                         {
                             miBD.Update("UPDATE Cliente SET num_edificio ='" + tNumero.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
@@ -231,13 +263,25 @@ namespace EburyPartners
                         {
                             miBD.Update("UPDATE Cliente SET ciudad ='" + tCiudad.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
+                        if ((tupla[8] is DBNull) && !tCiudad.Text.Equals(""))
+                        {
+                            miBD.Update("UPDATE Cliente SET ciudad ='" + tCiudad.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
 
                         if (!(tupla[9] is DBNull) && !tCP.Text.Equals((string)tupla[9]))
                         {
                             miBD.Update("UPDATE Cliente SET codigo_postal ='" + tCP.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }
+                        if ((tupla[9] is DBNull) && !tCP.Text.Equals(""))
+                        {
+                            miBD.Update("UPDATE Cliente SET codigo_postal ='" + tCP.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
 
                         if (!(tupla[10] is DBNull) && !tPais.Text.Equals((string)tupla[10]))
+                        {
+                            miBD.Update("UPDATE Cliente SET pais_cliente ='" + tPais.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
+                        }
+                        if ((tupla[10] is DBNull) && !tPais.Text.Equals(""))
                         {
                             miBD.Update("UPDATE Cliente SET pais_cliente ='" + tPais.Text + "' WHERE DNI_NIF='" + tDNI.Text + "';");
                         }

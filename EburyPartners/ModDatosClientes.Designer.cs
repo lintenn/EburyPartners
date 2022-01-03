@@ -64,11 +64,11 @@
             // 
             // lStatus
             // 
-            this.lStatus.AutoSize = true;
-            this.lStatus.Location = new System.Drawing.Point(300, 386);
+            this.lStatus.Location = new System.Drawing.Point(137, 386);
             this.lStatus.Name = "lStatus";
-            this.lStatus.Size = new System.Drawing.Size(0, 13);
+            this.lStatus.Size = new System.Drawing.Size(538, 13);
             this.lStatus.TabIndex = 97;
+            this.lStatus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // bBack
             // 
@@ -119,7 +119,7 @@
             // 
             this.bActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bActualizar.Location = new System.Drawing.Point(344, 339);
+            this.bActualizar.Location = new System.Drawing.Point(359, 338);
             this.bActualizar.Name = "bActualizar";
             this.bActualizar.Size = new System.Drawing.Size(91, 34);
             this.bActualizar.TabIndex = 93;
@@ -135,7 +135,7 @@
             this.tDNI.Location = new System.Drawing.Point(187, 99);
             this.tDNI.Name = "tDNI";
             this.tDNI.Size = new System.Drawing.Size(166, 20);
-            this.tDNI.TabIndex = 92;
+            this.tDNI.TabIndex = 60;
             // 
             // label12
             // 
@@ -144,9 +144,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(129, 102);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 13);
+            this.label12.Size = new System.Drawing.Size(57, 13);
             this.label12.TabIndex = 91;
-            this.label12.Text = "DNI_NIF:";
+            this.label12.Text = "DNI / NIF:";
             // 
             // tNumero
             // 
@@ -186,9 +186,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(472, 99);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(30, 13);
+            this.label10.Size = new System.Drawing.Size(32, 13);
             this.label10.TabIndex = 87;
-            this.label10.Text = "Pais:";
+            this.label10.Text = "País:";
             // 
             // tCalle
             // 
@@ -260,7 +260,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 13);
             this.label7.TabIndex = 80;
-            this.label7.Text = "Codigo Postal:";
+            this.label7.Text = "Código Postal:";
             // 
             // tNombre2
             // 
