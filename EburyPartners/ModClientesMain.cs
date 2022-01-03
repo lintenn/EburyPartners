@@ -33,9 +33,10 @@ namespace EburyPartners
                 MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
                 miBD.mostrarDataGrid(dataGridView1, consulta);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
+                lStatus.ForeColor = Color.Red;
+                lStatus.Text = "Error al conectar con la base de datos.";
             }
         }
 
@@ -49,9 +50,10 @@ namespace EburyPartners
                 MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
                 miBD.mostrarDataGrid(dataGridView1, consulta);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
+                lStatus.ForeColor = Color.Red;
+                lStatus.Text = "Error al conectar con la base de datos.";
             }
         }
 
@@ -84,9 +86,10 @@ namespace EburyPartners
                     lStatus.Text = "No se ha seleccionado ningún cliente.";
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("ERROR: " + ex.Message);
+                lStatus.ForeColor = Color.Red;
+                lStatus.Text = "Error al conectar con la base de datos.";
             }
         }
 
