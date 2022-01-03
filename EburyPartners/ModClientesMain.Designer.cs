@@ -85,13 +85,13 @@
             // 
             // lStatus
             // 
-            this.lStatus.AutoSize = true;
             this.lStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.lStatus.ForeColor = System.Drawing.Color.Black;
-            this.lStatus.Location = new System.Drawing.Point(282, 405);
+            this.lStatus.Location = new System.Drawing.Point(140, 405);
             this.lStatus.Name = "lStatus";
-            this.lStatus.Size = new System.Drawing.Size(0, 17);
+            this.lStatus.Size = new System.Drawing.Size(529, 17);
             this.lStatus.TabIndex = 4;
+            this.lStatus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // bBack
             // 
@@ -128,7 +128,6 @@
             this.Text = "Modificar datos de clientes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

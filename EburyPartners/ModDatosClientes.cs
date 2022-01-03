@@ -25,7 +25,6 @@ namespace EburyPartners
             InitializeComponent();
             this.nifCliente = nifCliente;
             cbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
-            tDNI.Enabled = false;
             cbTipo.Enabled = false;
 
             try
@@ -46,6 +45,7 @@ namespace EburyPartners
                 tCP.Text = tupla[9] is DBNull ? "" : (string)tupla[9];
                 tPais.Text = tupla[10] is DBNull ? "" : (string)tupla[10];
                 cbTipo.Text = (string)tupla[12];
+                tDNI.SelectionStart = tDNI.Text.Length;
             }
             catch (Exception ex)
             {
@@ -85,15 +85,19 @@ namespace EburyPartners
         {
             try
             {
+                bool dniExistente = false;
                 MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
                 string consulta = "SELECT * FROM Cliente WHERE DNI_NIF = '" + nifCliente + "';";
                 Object[] tupla = miBD.Select(consulta)[0];
 
+                if (!tDNI.Text.Equals(nifCliente)) foreach (Object[] t in miBD.Select("SELECT * FROM Cliente WHERE DNI_NIF = '" + tDNI.Text + "';")) dniExistente = true;
+
                 lStatus.ForeColor = Color.Red;
-                if (tDNI.Text.Equals("")) lStatus.Text = "El campo DNI_NIF no puede estar vacío.";
+                if (tDNI.Text.Equals("")) lStatus.Text = "El campo DNI / NIF no puede estar vacío.";
                 else if (tNombre1.Text.Equals("")) lStatus.Text = "El campo Nombre no puede estar vacío.";
                 else if (cbTipo.SelectedItem.ToString().Equals("Autónomo") && tApellido1.Text.Equals("")) lStatus.Text = "El campo Primer apellido no puede estar vacío.";
                 else if (DateTime.Compare(dateTimePicker1.Value.AddYears(18), DateTime.Now) > 0) lStatus.Text = "El cliente debe tener al menos 18 años.";
+                else if (dniExistente) lStatus.Text = "El NIF introducido ya pertenece a otro cliente del sistema.";
                 else
                 {
                     if (cbTipo.SelectedItem.ToString().Equals("Autónomo"))
@@ -126,8 +130,28 @@ namespace EburyPartners
 
                     if (!tDNI.Text.Equals((string)tupla[0]))
                     {
-                        // miBD.Update("UPDATE Cliente SET DNI_NIF = '" + tDNI.Text + "' WHERE DNI_NIF = '" + nifCliente + "';");
-                        // nifCliente = tDNI.Text;
+                        miBD.Update("SET FOREIGN_KEY_CHECKS = 0;");
+                        miBD.Update("UPDATE Cliente SET DNI_NIF = '" + tDNI.Text + "' WHERE DNI_NIF = '" + nifCliente + "';");
+
+                        foreach (Object[] t in miBD.Select("SELECT * FROM Relacionado WHERE principal = '" + nifCliente + "';"))
+                        {
+                            miBD.Update("UPDATE Relacionado SET principal = '" + tDNI.Text + "' WHERE DNI_NIF = '" + nifCliente + "';");
+                        }
+                        foreach (Object[] t in miBD.Select("SELECT * FROM Relacionado WHERE relacionado = '" + nifCliente + "';"))
+                        {
+                            miBD.Update("UPDATE Relacionado SET relacionado = '" + tDNI.Text + "' WHERE DNI_NIF = '" + nifCliente + "';");
+                        }
+                        foreach (Object[] t in miBD.Select("SELECT * FROM Autorizado WHERE DNI_NIF = '" + nifCliente + "';"))
+                        {
+                            miBD.Update("UPDATE Autorizado SET DNI_NIF = '" + tDNI.Text + "' WHERE DNI_NIF = '" + nifCliente + "';");
+                        }
+                        foreach (Object[] t in miBD.Select("SELECT * FROM Propietarios WHERE DNI_NIF = '" + nifCliente + "';"))
+                        {
+                            miBD.Update("UPDATE Propietarios SET DNI_NIF = '" + tDNI.Text + "' WHERE DNI_NIF = '" + nifCliente + "';");
+                        }
+
+                        miBD.Update("SET FOREIGN_KEY_CHECKS = 1;");
+                        nifCliente = tDNI.Text;
                     }
 
                     if (!tNombre1.Text.Equals((string)tupla[1]))
@@ -197,7 +221,7 @@ namespace EburyPartners
             catch (Exception)
             {
                 lStatus.ForeColor = Color.Red;
-                lStatus.Text = "  Error al actualizar datos del cliente";
+                lStatus.Text = "Error al actualizar datos del cliente";
             }
         }
     }
