@@ -47,9 +47,9 @@ namespace EburyPartners
                 cbTipo.Text = (string)tupla[12];
                 tDNI.SelectionStart = tDNI.Text.Length;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Cliente no encontrado. Vuelva a la ventana anterior y actualice la lista de clientes.");
             }
         }
 
