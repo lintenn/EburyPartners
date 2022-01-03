@@ -55,5 +55,12 @@ namespace EburyPartners
             this.Visible = true;
         }
 
+        private void bModAutorizados_Click(object sender, EventArgs e)
+        {
+            ModificarAutorizados ventana = new ModificarAutorizados();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

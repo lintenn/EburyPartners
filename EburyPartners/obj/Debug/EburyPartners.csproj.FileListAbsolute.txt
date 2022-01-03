@@ -91,3 +91,4 @@ D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartn
 D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.ModDatosClientes.resources
 D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.ModClientesMain.resources
 D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.ModificarEstadoCliente.resources
+D:\Angelo\UMA\Ingeniería de Requisitos\Ebury\EburyPartners\obj\Debug\EburyPartners.ModificarAutorizados.resources
