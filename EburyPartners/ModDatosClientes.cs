@@ -221,7 +221,7 @@ namespace EburyPartners
             catch (Exception)
             {
                 lStatus.ForeColor = Color.Red;
-                lStatus.Text = "Error al actualizar datos del cliente";
+                lStatus.Text = "Error al conectar con la base de datos.";
             }
         }
     }
