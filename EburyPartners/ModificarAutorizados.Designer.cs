@@ -69,6 +69,7 @@
             this.dgvCuentas.AllowUserToDeleteRows = false;
             this.dgvCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCuentas.Location = new System.Drawing.Point(12, 51);
+            this.dgvCuentas.MultiSelect = false;
             this.dgvCuentas.Name = "dgvCuentas";
             this.dgvCuentas.ReadOnly = true;
             this.dgvCuentas.Size = new System.Drawing.Size(776, 128);
@@ -91,6 +92,7 @@
             this.dgvNoAutorizados.AllowUserToDeleteRows = false;
             this.dgvNoAutorizados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNoAutorizados.Location = new System.Drawing.Point(12, 222);
+            this.dgvNoAutorizados.MultiSelect = false;
             this.dgvNoAutorizados.Name = "dgvNoAutorizados";
             this.dgvNoAutorizados.ReadOnly = true;
             this.dgvNoAutorizados.Size = new System.Drawing.Size(372, 108);
@@ -102,6 +104,7 @@
             this.dgvAutorizados.AllowUserToDeleteRows = false;
             this.dgvAutorizados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAutorizados.Location = new System.Drawing.Point(416, 222);
+            this.dgvAutorizados.MultiSelect = false;
             this.dgvAutorizados.Name = "dgvAutorizados";
             this.dgvAutorizados.ReadOnly = true;
             this.dgvAutorizados.Size = new System.Drawing.Size(372, 108);
