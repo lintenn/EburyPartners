@@ -92,11 +92,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AsociarCuentas.cs">
+    <Compile Include="AsociarCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AsociarCuentas.Designer.cs">
-      <DependentUpon>AsociarCuentas.cs</DependentUpon>
+    <Compile Include="AsociarCuenta.Designer.cs">
+      <DependentUpon>AsociarCuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="BDLibrary.cs" />
     <Compile Include="ConsultaFltroCliente.cs" />
@@ -205,8 +205,8 @@
     <EmbeddedResource Include="Alemania.resx">
       <DependentUpon>Alemania.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AsociarCuentas.resx">
-      <DependentUpon>AsociarCuentas.cs</DependentUpon>
+    <EmbeddedResource Include="AsociarCuenta.resx">
+      <DependentUpon>AsociarCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CambioDeCuenta.resx">
       <DependentUpon>CambioDeCuenta.cs</DependentUpon>
