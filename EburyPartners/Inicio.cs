@@ -73,7 +73,7 @@ namespace EburyPartners
 
         private void bAsociarCuentas_Click(object sender, EventArgs e)
         {
-            AsociarCuentas ventana = new AsociarCuentas();
+            AsociarCuenta ventana = new AsociarCuenta();
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
