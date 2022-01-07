@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EburyPartners
 {
-    public partial class AsociarCuentas : Form
+    public partial class AsociarCuenta : Form
     {
-        public AsociarCuentas()
+        public AsociarCuenta()
         {
             InitializeComponent();
         }
