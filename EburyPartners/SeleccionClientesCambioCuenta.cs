@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace EburyPartners
 {
-    public partial class SelecciónClientesCambioCuenta : Form
+    public partial class SeleccionClientesCambioCuenta : Form
     {
 
         private const string SERVER = "eburyrequisitos.cobadwnzalab.eu-central-1.rds.amazonaws.com";
@@ -19,7 +19,7 @@ namespace EburyPartners
         private const string USER = "grupo01";
         private const string PWD = "nsB79maupU4rELd4";
 
-        public SelecciónClientesCambioCuenta()
+        public SeleccionClientesCambioCuenta()
         {
             InitializeComponent();
             actualizarDatagrid();
@@ -47,18 +47,15 @@ namespace EburyPartners
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-
             try
             {
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
 
-                    CambioCuenta ventana = new CambioCuenta((string)dataGridView1.SelectedRows[0].Cells[2].Value, (string)dataGridView1.SelectedRows[0].Cells[1].Value);
+                    CambioDeCuenta ventana = new CambioDeCuenta((string)dataGridView1.SelectedRows[0].Cells[2].Value, (string)dataGridView1.SelectedRows[0].Cells[1].Value);
                     this.Visible = false;
                     ventana.ShowDialog();
                     this.Visible = true;
-
-
                 }
             }
             catch (Exception ex)

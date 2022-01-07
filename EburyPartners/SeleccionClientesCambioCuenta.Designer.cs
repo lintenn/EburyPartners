@@ -1,6 +1,6 @@
 ﻿namespace EburyPartners
 {
-    partial class SelecciónClientesCambioCuenta
+    partial class SeleccionClientesCambioCuenta
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelecciónClientesCambioCuenta));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeleccionClientesCambioCuenta));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.bRegistro = new System.Windows.Forms.Button();
@@ -45,7 +45,6 @@
             this.dataGridView1.Location = new System.Drawing.Point(101, 141);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(998, 411);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
@@ -56,10 +55,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(514, 55);
+            this.label1.Location = new System.Drawing.Point(522, 60);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 52);
+            this.label1.Size = new System.Drawing.Size(121, 33);
             this.label1.TabIndex = 17;
             this.label1.Text = "Clientes";
             // 
@@ -67,11 +66,11 @@
             // 
             this.bRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bRegistro.Location = new System.Drawing.Point(523, 595);
+            this.bRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bRegistro.Location = new System.Drawing.Point(528, 601);
             this.bRegistro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bRegistro.Name = "bRegistro";
-            this.bRegistro.Size = new System.Drawing.Size(171, 52);
+            this.bRegistro.Size = new System.Drawing.Size(151, 52);
             this.bRegistro.TabIndex = 64;
             this.bRegistro.Text = "Actualizar";
             this.bRegistro.UseVisualStyleBackColor = true;
@@ -88,7 +87,7 @@
             this.bBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bBack.ForeColor = System.Drawing.Color.Transparent;
             this.bBack.Image = ((System.Drawing.Image)(resources.GetObject("bBack.Image")));
-            this.bBack.Location = new System.Drawing.Point(1056, 579);
+            this.bBack.Location = new System.Drawing.Point(1048, 581);
             this.bBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bBack.Name = "bBack";
             this.bBack.Size = new System.Drawing.Size(122, 92);
@@ -97,7 +96,7 @@
             this.bBack.UseVisualStyleBackColor = false;
             this.bBack.Click += new System.EventHandler(this.bBack_Click);
             // 
-            // SelecciónClientesCambioCuenta
+            // SeleccionClientesCambioCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,8 +106,8 @@
             this.Controls.Add(this.bRegistro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "SelecciónClientesCambioCuenta";
-            this.Text = "Selección de cliente";
+            this.Name = "SeleccionClientesCambioCuenta";
+            this.Text = "Selección de clientes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
