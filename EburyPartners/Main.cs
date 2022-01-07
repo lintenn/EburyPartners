@@ -39,6 +39,10 @@ namespace EburyPartners
             this.Visible = true;
 
         }
- 
+
+        private void bBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

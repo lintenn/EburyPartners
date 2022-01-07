@@ -27,11 +27,6 @@ namespace EburyPartners
             cbActivas.Text = "Todas";
         }
 
-        private void cbActivas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void bBuscar_Click(object sender, EventArgs e)
         {
             string consulta;
@@ -49,7 +44,7 @@ namespace EburyPartners
                 }
                 else
                 {
-                    consulta = "SELECT P.IBAN,P.caja_deposito,P.fecha_apertura, P.fecha_cierre, P.cantidad, P.moneda, P.pais, P.estado estado_cuenta, P.tipo tipo_cuenta, Pr.DNI_NIF, Pr.estado estado_usuario, Pr.tipo tipo_usuario, Pr.primer_nombre, Pr.segundo_nombre, Pr.ciudad, Pr.calle, Pr.num_edificio, Pr.codigo_postal, Pr.pais_cliente FROM Producto P JOIN Propietarios Prop ON P.IBAN = Prop.IBAN JOIN Cliente Pr ON Pr.DNI_NIF = Prop.DNI_NIF WHERE P.IBAN LIKE '%" + tCuenta.Text + "%' AND pais = 'NL' AND P.estado = '" + cbActivas.Text + ";";
+                    consulta = "SELECT P.IBAN,P.caja_deposito,P.fecha_apertura, P.fecha_cierre, P.cantidad, P.moneda, P.pais, P.estado estado_cuenta, P.tipo tipo_cuenta, Pr.DNI_NIF, Pr.estado estado_usuario, Pr.tipo tipo_usuario, Pr.primer_nombre, Pr.segundo_nombre, Pr.ciudad, Pr.calle, Pr.num_edificio, Pr.codigo_postal, Pr.pais_cliente FROM Producto P JOIN Propietarios Prop ON P.IBAN = Prop.IBAN JOIN Cliente Pr ON Pr.DNI_NIF = Prop.DNI_NIF WHERE P.IBAN LIKE '%" + tCuenta.Text + "%' AND pais = 'NL' AND P.estado = '" + cbActivas.Text + "';";
                 }
 
                 MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);

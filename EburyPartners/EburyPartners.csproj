@@ -116,6 +116,66 @@
     <Compile Include="Alemania.Designer.cs">
       <DependentUpon>Alemania.cs</DependentUpon>
     </Compile>
+    <Compile Include="CambioDeCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioDeCuenta.Designer.cs">
+      <DependentUpon>CambioDeCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionClientesCambioCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionClientesCambioCuenta.Designer.cs">
+      <DependentUpon>SeleccionClientesCambioCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAutorizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAutorizados.Designer.cs">
+      <DependentUpon>ModificarAutorizados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModClientesMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModClientesMain.Designer.cs">
+      <DependentUpon>ModClientesMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModDatosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModDatosClientes.Designer.cs">
+      <DependentUpon>ModDatosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarEstadoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarEstadoCliente.Designer.cs">
+      <DependentUpon>ModificarEstadoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario.Designer.cs">
+      <DependentUpon>Formulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Re-registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Re-registro.Designer.cs">
+      <DependentUpon>Re-registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="HealthCheck.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +199,26 @@
     <EmbeddedResource Include="Alemania.resx">
       <DependentUpon>Alemania.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CambioDeCuenta.resx">
+      <DependentUpon>CambioDeCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FiltroClientes.resx">
       <DependentUpon>FiltroClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FiltroCuenta.resx">
       <DependentUpon>FiltroCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAutorizados.resx">
+      <DependentUpon>ModificarAutorizados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEstadoCliente.resx">
+      <DependentUpon>ModificarEstadoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario.resx">
+      <DependentUpon>Formulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HealthCheck.resx">
       <DependentUpon>HealthCheck.cs</DependentUpon>
@@ -154,6 +229,12 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModClientesMain.resx">
+      <DependentUpon>ModClientesMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModDatosClientes.resx">
+      <DependentUpon>ModDatosClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -163,6 +244,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Re-registro.resx">
+      <DependentUpon>Re-registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionClientesCambioCuenta.resx">
+      <DependentUpon>SeleccionClientesCambioCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
