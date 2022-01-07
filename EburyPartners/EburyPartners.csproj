@@ -122,6 +122,12 @@
     <Compile Include="CambioDeCuenta.Designer.cs">
       <DependentUpon>CambioDeCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="AsociarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsociarCuenta.Designer.cs">
+      <DependentUpon>AsociarCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="SeleccionClientesCambioCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Alemania.resx">
       <DependentUpon>Alemania.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsociarCuenta.resx">
+      <DependentUpon>AsociarCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CambioDeCuenta.resx">
       <DependentUpon>CambioDeCuenta.cs</DependentUpon>
