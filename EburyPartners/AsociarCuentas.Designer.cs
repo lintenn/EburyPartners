@@ -1,7 +1,7 @@
 ﻿
 namespace EburyPartners
 {
-    partial class AsociarCuenta
+    partial class AsociarCuentas
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace EburyPartners
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "AsociarCuenta";
+            this.Text = "AsociarCuentas";
         }
 
         #endregion
