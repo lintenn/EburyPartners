@@ -42,10 +42,9 @@
             // 
             this.bReRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bReRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bReRegistro.Location = new System.Drawing.Point(182, 522);
-            this.bReRegistro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bReRegistro.Location = new System.Drawing.Point(121, 339);
             this.bReRegistro.Name = "bReRegistro";
-            this.bReRegistro.Size = new System.Drawing.Size(366, 92);
+            this.bReRegistro.Size = new System.Drawing.Size(244, 60);
             this.bReRegistro.TabIndex = 2;
             this.bReRegistro.Text = "Re-registro";
             this.bReRegistro.UseVisualStyleBackColor = true;
@@ -55,10 +54,9 @@
             // 
             this.bOtras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bOtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bOtras.Location = new System.Drawing.Point(663, 522);
-            this.bOtras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bOtras.Location = new System.Drawing.Point(442, 339);
             this.bOtras.Name = "bOtras";
-            this.bOtras.Size = new System.Drawing.Size(366, 92);
+            this.bOtras.Size = new System.Drawing.Size(244, 60);
             this.bOtras.TabIndex = 3;
             this.bOtras.Text = "Otras operaciones";
             this.bOtras.UseVisualStyleBackColor = true;
@@ -68,10 +66,9 @@
             // 
             this.bRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bRegistro.Location = new System.Drawing.Point(182, 71);
-            this.bRegistro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bRegistro.Location = new System.Drawing.Point(121, 46);
             this.bRegistro.Name = "bRegistro";
-            this.bRegistro.Size = new System.Drawing.Size(366, 92);
+            this.bRegistro.Size = new System.Drawing.Size(244, 60);
             this.bRegistro.TabIndex = 4;
             this.bRegistro.Text = "Registro";
             this.bRegistro.UseVisualStyleBackColor = true;
@@ -81,10 +78,9 @@
             // 
             this.bModDatosClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bModDatosClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bModDatosClientes.Location = new System.Drawing.Point(182, 225);
-            this.bModDatosClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bModDatosClientes.Location = new System.Drawing.Point(121, 146);
             this.bModDatosClientes.Name = "bModDatosClientes";
-            this.bModDatosClientes.Size = new System.Drawing.Size(366, 92);
+            this.bModDatosClientes.Size = new System.Drawing.Size(244, 60);
             this.bModDatosClientes.TabIndex = 5;
             this.bModDatosClientes.Text = "Modificar datos de clientes";
             this.bModDatosClientes.UseVisualStyleBackColor = true;
@@ -94,10 +90,9 @@
             // 
             this.bModEstadoClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bModEstadoClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bModEstadoClientes.Location = new System.Drawing.Point(182, 374);
-            this.bModEstadoClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bModEstadoClientes.Location = new System.Drawing.Point(121, 243);
             this.bModEstadoClientes.Name = "bModEstadoClientes";
-            this.bModEstadoClientes.Size = new System.Drawing.Size(366, 92);
+            this.bModEstadoClientes.Size = new System.Drawing.Size(244, 60);
             this.bModEstadoClientes.TabIndex = 6;
             this.bModEstadoClientes.Text = "Modificar estado de clientes";
             this.bModEstadoClientes.UseVisualStyleBackColor = true;
@@ -107,22 +102,21 @@
             // 
             this.bAsociarCuentas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bAsociarCuentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bAsociarCuentas.Location = new System.Drawing.Point(663, 71);
-            this.bAsociarCuentas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bAsociarCuentas.Location = new System.Drawing.Point(442, 46);
             this.bAsociarCuentas.Name = "bAsociarCuentas";
-            this.bAsociarCuentas.Size = new System.Drawing.Size(366, 92);
+            this.bAsociarCuentas.Size = new System.Drawing.Size(244, 60);
             this.bAsociarCuentas.TabIndex = 7;
             this.bAsociarCuentas.Text = "Asociar cuentas bancarias";
             this.bAsociarCuentas.UseVisualStyleBackColor = true;
+            this.bAsociarCuentas.Click += new System.EventHandler(this.bAsociarCuentas_Click);
             // 
             // bTipoCuentas
             // 
             this.bTipoCuentas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bTipoCuentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bTipoCuentas.Location = new System.Drawing.Point(663, 225);
-            this.bTipoCuentas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bTipoCuentas.Location = new System.Drawing.Point(442, 146);
             this.bTipoCuentas.Name = "bTipoCuentas";
-            this.bTipoCuentas.Size = new System.Drawing.Size(366, 92);
+            this.bTipoCuentas.Size = new System.Drawing.Size(244, 60);
             this.bTipoCuentas.TabIndex = 8;
             this.bTipoCuentas.Text = "Cambiar tipo de cuentas bancarias";
             this.bTipoCuentas.UseVisualStyleBackColor = true;
@@ -132,10 +126,9 @@
             // 
             this.bModAutorizados.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bModAutorizados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bModAutorizados.Location = new System.Drawing.Point(663, 374);
-            this.bModAutorizados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bModAutorizados.Location = new System.Drawing.Point(442, 243);
             this.bModAutorizados.Name = "bModAutorizados";
-            this.bModAutorizados.Size = new System.Drawing.Size(366, 92);
+            this.bModAutorizados.Size = new System.Drawing.Size(244, 60);
             this.bModAutorizados.TabIndex = 9;
             this.bModAutorizados.Text = "Modificar autorizados a cuentas bancarias";
             this.bModAutorizados.UseVisualStyleBackColor = true;
@@ -143,10 +136,10 @@
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.bModAutorizados);
             this.Controls.Add(this.bTipoCuentas);
             this.Controls.Add(this.bAsociarCuentas);
@@ -155,7 +148,6 @@
             this.Controls.Add(this.bRegistro);
             this.Controls.Add(this.bOtras);
             this.Controls.Add(this.bReRegistro);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Inicio";
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);
