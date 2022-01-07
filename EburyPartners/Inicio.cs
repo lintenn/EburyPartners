@@ -71,5 +71,12 @@ namespace EburyPartners
             this.Visible = true;
         }
 
+        private void bAsociarCuentas_Click(object sender, EventArgs e)
+        {
+            AsociarCuentas ventana = new AsociarCuentas();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
