@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace EburyPartners
 {
-    public partial class CambioCuenta : Form
+    public partial class CambioDeCuenta : Form
     {
 
         private const string SERVER = "eburyrequisitos.cobadwnzalab.eu-central-1.rds.amazonaws.com";
@@ -24,23 +24,27 @@ namespace EburyPartners
         private string paisCuenta;
         private string monedaCuenta;
 
-        public CambioCuenta(string dniCliente, string IBAN)
+        public CambioDeCuenta(string dniCliente, string IBAN)
         {
             InitializeComponent();
 
             dni = dniCliente;
             IBANCuenta = IBAN;
 
-            actualizar(dni,IBANCuenta);
+            actualizar(dni, IBANCuenta);
 
             comboBoxTipoCuenta.Items.Add("Pooled");
             comboBoxTipoCuenta.Items.Add("Segregada");
             comboBoxTipoCuenta.Items.Add("Dedicada");
         }
 
+        private void bBack_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-
             try
             {
                 string aux = (String)comboBoxTipoCuenta.SelectedItem;
@@ -103,7 +107,7 @@ namespace EburyPartners
 
                         string nuevoIBAN = "";
 
-                        string consulta1 = "Select IBAN from Producto where tipo = '"+aux+"' and fecha_cierre>NOW() and pais = '" + paisCuenta + "' and moneda = '" + monedaCuenta + "' and estado = 'activa';";
+                        string consulta1 = "Select IBAN from Producto where tipo = '" + aux + "' and fecha_cierre>NOW() and pais = '" + paisCuenta + "' and moneda = '" + monedaCuenta + "' and estado = 'activa';";
 
                         int i = 0;
 
@@ -131,11 +135,6 @@ namespace EburyPartners
             }
         }
 
-        private void bBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void actualizar(string dniCliente, string IBAN)
         {
             try
@@ -151,11 +150,17 @@ namespace EburyPartners
                 monedaCuenta = (String)tupla[3];
 
                 lNombre.Text = "El cliente con DNI/NIF " + dniCliente + " tiene la cuenta " + tipoCuenta;
-            } catch (Exception)
+            }
+            catch (Exception)
             {
                 lMessage.ForeColor = Color.Red;
                 lMessage.Text = "ERROR al conectar con la base de datos";
             }
+        }
+
+        private void CambioDeCuenta_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -116,6 +116,18 @@
     <Compile Include="Alemania.Designer.cs">
       <DependentUpon>Alemania.cs</DependentUpon>
     </Compile>
+    <Compile Include="CambioDeCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioDeCuenta.Designer.cs">
+      <DependentUpon>CambioDeCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionClientesCambioCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionClientesCambioCuenta.Designer.cs">
+      <DependentUpon>SeleccionClientesCambioCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarAutorizados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +199,9 @@
     <EmbeddedResource Include="Alemania.resx">
       <DependentUpon>Alemania.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CambioDeCuenta.resx">
+      <DependentUpon>CambioDeCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FiltroClientes.resx">
       <DependentUpon>FiltroClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionClientesCambioCuenta.resx">
+      <DependentUpon>SeleccionClientesCambioCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
