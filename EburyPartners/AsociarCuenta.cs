@@ -50,10 +50,10 @@ namespace EburyPartners
             if (dataGridViewClientes.SelectedRows.Count > 0 && lTipo.Text!="")
             {
                 String DNI = (string)dataGridViewClientes.SelectedRows[0].Cells[0].Value;
-                String IBAN = "1";
                 String pais= (string)dataGridViewClientes.SelectedRows[0].Cells[10].Value;
                 String tipo = lTipo.Text;
-                AsociarCuentaBancaria(DNI, IBAN, pais, tipo);
+                String IBAN = AsociarCuentaBancaria(DNI, pais, tipo);
+                
                 lEstado.ForeColor = Color.Black;
                 lEstado.Text = "Cuenta con IBAN "+IBAN+"del tipo "+tipo+" asociada al cliente "+DNI;
             }
@@ -67,9 +67,15 @@ namespace EburyPartners
             lTipo.SelectedIndex = -1;
         }
 
-        public void AsociarCuentaBancaria(string DNI, string IBAN, string pais, string tipo)
+        public string AsociarCuentaBancaria(string DNI, string pais, string tipo)
         {
-            Console.WriteLine(DNI + " " + IBAN + " " + pais + " " + tipo);
+            MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
+            miBD.mostrarDataGrid(dataGridViewClientes, "SELECT * FROM Cliente;");
+
+            Object[] tupla = miBD.Select("SELECT * FROM Producto LEFT JOIN Propietarios USING(IBAN) WHERE Propietarios.IBAN IS NULL AND estado = 'activa' and cantidad = 0; ")[0];
+
+            String IBAN=(string)tupla[0];
+            return IBAN;
         }
     }
 }
