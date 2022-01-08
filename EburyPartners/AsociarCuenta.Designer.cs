@@ -33,9 +33,10 @@ namespace EburyPartners
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewClientes = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lTipo = new System.Windows.Forms.ListBox();
             this.bBack = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bAsociar = new System.Windows.Forms.Button();
+            this.lEstado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,25 +62,25 @@ namespace EburyPartners
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 338);
+            this.label2.Location = new System.Drawing.Point(12, 329);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tipos de cuenta bancaria";
             // 
-            // listBox1
+            // lTipo
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTipo.FormattingEnabled = true;
+            this.lTipo.ItemHeight = 20;
+            this.lTipo.Items.AddRange(new object[] {
             "Pooled",
             "Segregada",
             "Dedicada"});
-            this.listBox1.Location = new System.Drawing.Point(205, 343);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 64);
-            this.listBox1.TabIndex = 3;
+            this.lTipo.Location = new System.Drawing.Point(205, 334);
+            this.lTipo.Name = "lTipo";
+            this.lTipo.Size = new System.Drawing.Size(120, 64);
+            this.lTipo.TabIndex = 3;
             // 
             // bBack
             // 
@@ -99,15 +100,27 @@ namespace EburyPartners
             this.bBack.UseVisualStyleBackColor = false;
             this.bBack.Click += new System.EventHandler(this.bBack_Click);
             // 
-            // button1
+            // bAsociar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(415, 343);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 64);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Asociar cuenta bancaria";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bAsociar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bAsociar.Location = new System.Drawing.Point(415, 334);
+            this.bAsociar.Name = "bAsociar";
+            this.bAsociar.Size = new System.Drawing.Size(219, 64);
+            this.bAsociar.TabIndex = 8;
+            this.bAsociar.Text = "Asociar cuenta bancaria";
+            this.bAsociar.UseVisualStyleBackColor = true;
+            this.bAsociar.Click += new System.EventHandler(this.bAsociar_Click);
+            // 
+            // lEstado
+            // 
+            this.lEstado.AutoSize = true;
+            this.lEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lEstado.ForeColor = System.Drawing.Color.Red;
+            this.lEstado.Location = new System.Drawing.Point(202, 412);
+            this.lEstado.Name = "lEstado";
+            this.lEstado.Size = new System.Drawing.Size(57, 16);
+            this.lEstado.TabIndex = 9;
+            this.lEstado.Text = "ejemplo";
             // 
             // AsociarCuenta
             // 
@@ -115,9 +128,10 @@ namespace EburyPartners
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lEstado);
+            this.Controls.Add(this.bAsociar);
             this.Controls.Add(this.bBack);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lTipo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridViewClientes);
             this.Controls.Add(this.label1);
@@ -134,8 +148,9 @@ namespace EburyPartners
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewClientes;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lTipo;
         private System.Windows.Forms.Button bBack;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bAsociar;
+        private System.Windows.Forms.Label lEstado;
     }
 }
