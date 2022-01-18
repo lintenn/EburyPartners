@@ -194,3 +194,6 @@ C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\E
 C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.exe
 C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.pdb
 C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.AsociarCuenta.resources
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.GestionPersonasEmpresa.resources
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.RegistroPersona.resources
+C:\Users\migue\Documents\3ºSoftware.1ºCuatrimestre\Ingeniería de Requisitos\Ebury\EburyPartners\EburyPartners\obj\Debug\EburyPartners.RegistroEmpresa.resources
