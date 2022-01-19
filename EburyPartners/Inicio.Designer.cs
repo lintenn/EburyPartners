@@ -108,6 +108,7 @@
             this.bAsociarCuentas.TabIndex = 7;
             this.bAsociarCuentas.Text = "Asociar cuentas bancarias";
             this.bAsociarCuentas.UseVisualStyleBackColor = true;
+            this.bAsociarCuentas.Click += new System.EventHandler(this.bAsociarCuentas_Click);
             // 
             // bTipoCuentas
             // 
@@ -119,6 +120,7 @@
             this.bTipoCuentas.TabIndex = 8;
             this.bTipoCuentas.Text = "Cambiar tipo de cuentas bancarias";
             this.bTipoCuentas.UseVisualStyleBackColor = true;
+            this.bTipoCuentas.Click += new System.EventHandler(this.bTipoCuentas_Click);
             // 
             // bModAutorizados
             // 

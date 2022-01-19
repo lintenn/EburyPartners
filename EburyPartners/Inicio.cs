@@ -62,5 +62,21 @@ namespace EburyPartners
             ventana.ShowDialog();
             this.Visible = true;
         }
+
+        private void bTipoCuentas_Click(object sender, EventArgs e)
+        {
+            SeleccionClientesCambioCuenta ventana = new SeleccionClientesCambioCuenta();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void bAsociarCuentas_Click(object sender, EventArgs e)
+        {
+            AsociarCuenta ventana = new AsociarCuenta();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

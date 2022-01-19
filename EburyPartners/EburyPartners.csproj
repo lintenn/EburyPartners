@@ -92,6 +92,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsociarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsociarCuenta.Designer.cs">
+      <DependentUpon>AsociarCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="BDLibrary.cs" />
     <Compile Include="ConsultaFltroCliente.cs" />
     <Compile Include="ConsultaFltroCuenta.cs" />
@@ -115,6 +121,36 @@
     </Compile>
     <Compile Include="Alemania.Designer.cs">
       <DependentUpon>Alemania.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambioDeCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioDeCuenta.Designer.cs">
+      <DependentUpon>CambioDeCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPersonasEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPersonasEmpresa.Designer.cs">
+      <DependentUpon>GestionPersonasEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroEmpresa.Designer.cs">
+      <DependentUpon>RegistroEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionClientesCambioCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionClientesCambioCuenta.Designer.cs">
+      <DependentUpon>SeleccionClientesCambioCuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="ModificarAutorizados.cs">
       <SubType>Form</SubType>
@@ -152,11 +188,11 @@
     <Compile Include="Re-registro.Designer.cs">
       <DependentUpon>Re-registro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registro.cs">
+    <Compile Include="RegistroPersona.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registro.Designer.cs">
-      <DependentUpon>Registro.cs</DependentUpon>
+    <Compile Include="RegistroPersona.Designer.cs">
+      <DependentUpon>RegistroPersona.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
@@ -187,11 +223,20 @@
     <EmbeddedResource Include="Alemania.resx">
       <DependentUpon>Alemania.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AsociarCuenta.resx">
+      <DependentUpon>AsociarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioDeCuenta.resx">
+      <DependentUpon>CambioDeCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FiltroClientes.resx">
       <DependentUpon>FiltroClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FiltroCuenta.resx">
       <DependentUpon>FiltroCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPersonasEmpresa.resx">
+      <DependentUpon>GestionPersonasEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarAutorizados.resx">
       <DependentUpon>ModificarAutorizados.cs</DependentUpon>
@@ -234,6 +279,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroPersona.resx">
+      <DependentUpon>RegistroPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroEmpresa.resx">
+      <DependentUpon>RegistroEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionClientesCambioCuenta.resx">
+      <DependentUpon>SeleccionClientesCambioCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
