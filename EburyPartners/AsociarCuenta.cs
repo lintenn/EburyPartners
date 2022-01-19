@@ -50,12 +50,12 @@ namespace EburyPartners
             if (dataGridViewClientes.SelectedRows.Count > 0 && lTipo.Text!="")
             {
                 String DNI = (string)dataGridViewClientes.SelectedRows[0].Cells[0].Value;
-                String pais= (string)dataGridViewClientes.SelectedRows[0].Cells[10].Value;
+                String pais= (string)dataGridViewClientes.SelectedRows[0].Cells[12].Value;
                 String tipo = lTipo.Text;
                 String IBAN = AsociarCuentaBancaria(DNI, pais, tipo);
                 
                 lEstado.ForeColor = Color.Black;
-                lEstado.Text = "Cuenta con IBAN "+IBAN+"del tipo "+tipo+" asociada al cliente "+DNI;
+                lEstado.Text = "Cuenta con IBAN "+IBAN+" del tipo "+tipo+" asociada al cliente "+DNI;
             }
             else
             {

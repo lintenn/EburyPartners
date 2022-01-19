@@ -29,10 +29,12 @@ namespace EburyPartners
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.label1 = new System.Windows.Forms.Label();
             this.bPersona = new System.Windows.Forms.Button();
             this.bEmpresa = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.bBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,12 +79,32 @@ namespace EburyPartners
             this.label2.TabIndex = 3;
             this.label2.Text = "una persona física o para una empresa";
             // 
+            // bBack
+            // 
+            this.bBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bBack.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.bBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bBack.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bBack.FlatAppearance.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.bBack.FlatAppearance.BorderSize = 10;
+            this.bBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bBack.ForeColor = System.Drawing.Color.Transparent;
+            this.bBack.Image = ((System.Drawing.Image)(resources.GetObject("bBack.Image")));
+            this.bBack.Location = new System.Drawing.Point(707, 378);
+            this.bBack.Name = "bBack";
+            this.bBack.Size = new System.Drawing.Size(81, 60);
+            this.bBack.TabIndex = 99;
+            this.bBack.UseMnemonic = false;
+            this.bBack.UseVisualStyleBackColor = false;
+            this.bBack.Click += new System.EventHandler(this.bBack_Click);
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bBack);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bEmpresa);
             this.Controls.Add(this.bPersona);
@@ -100,5 +122,6 @@ namespace EburyPartners
         private System.Windows.Forms.Button bPersona;
         private System.Windows.Forms.Button bEmpresa;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button bBack;
     }
 }
