@@ -57,7 +57,6 @@
             this.lr2 = new System.Windows.Forms.Label();
             this.lr3 = new System.Windows.Forms.Label();
             this.lr4 = new System.Windows.Forms.Label();
-            this.lStatus = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,6 +71,9 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.lStatus = new System.Windows.Forms.Label();
+            this.cbCuenta = new System.Windows.Forms.ComboBox();
+            this.cbTipo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // bBack
@@ -387,15 +389,6 @@
             this.lr4.TabIndex = 37;
             this.lr4.Text = "*";
             // 
-            // lStatus
-            // 
-            this.lStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lStatus.AutoSize = true;
-            this.lStatus.Location = new System.Drawing.Point(302, 441);
-            this.lStatus.Name = "lStatus";
-            this.lStatus.Size = new System.Drawing.Size(0, 13);
-            this.lStatus.TabIndex = 38;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -544,12 +537,39 @@
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // lStatus
+            // 
+            this.lStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lStatus.AutoSize = true;
+            this.lStatus.Location = new System.Drawing.Point(302, 441);
+            this.lStatus.Name = "lStatus";
+            this.lStatus.Size = new System.Drawing.Size(0, 13);
+            this.lStatus.TabIndex = 38;
+            // 
+            // cbCuenta
+            // 
+            this.cbCuenta.FormattingEnabled = true;
+            this.cbCuenta.Location = new System.Drawing.Point(684, 149);
+            this.cbCuenta.Name = "cbCuenta";
+            this.cbCuenta.Size = new System.Drawing.Size(121, 21);
+            this.cbCuenta.TabIndex = 57;
+            // 
+            // cbTipo
+            // 
+            this.cbTipo.FormattingEnabled = true;
+            this.cbTipo.Location = new System.Drawing.Point(684, 176);
+            this.cbTipo.Name = "cbTipo";
+            this.cbTipo.Size = new System.Drawing.Size(121, 21);
+            this.cbTipo.TabIndex = 58;
+            // 
             // RegistroPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbTipo);
+            this.Controls.Add(this.cbCuenta);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label17);
@@ -630,7 +650,6 @@
         private System.Windows.Forms.Label lr2;
         private System.Windows.Forms.Label lr3;
         private System.Windows.Forms.Label lr4;
-        private System.Windows.Forms.Label lStatus;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label1;
@@ -645,5 +664,8 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lStatus;
+        private System.Windows.Forms.ComboBox cbCuenta;
+        private System.Windows.Forms.ComboBox cbTipo;
     }
 }
