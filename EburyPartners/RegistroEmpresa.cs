@@ -16,5 +16,18 @@ namespace EburyPartners
         {
             InitializeComponent();
         }
+
+        private void bBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bRegistro_Click(object sender, EventArgs e)
+        {
+            GestionPersonasEmpresa ventana = new GestionPersonasEmpresa();
+            this.Visible = false;
+            ventana.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

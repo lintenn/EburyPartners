@@ -27,7 +27,7 @@ namespace EburyPartners
 
         private void bEmpresa_Click(object sender, EventArgs e)
         {
-            GestionPersonasEmpresa ventana = new GestionPersonasEmpresa();
+            RegistroEmpresa ventana = new RegistroEmpresa();
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;

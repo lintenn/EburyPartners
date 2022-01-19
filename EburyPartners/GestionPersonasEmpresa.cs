@@ -16,5 +16,10 @@ namespace EburyPartners
         {
             InitializeComponent();
         }
+
+        private void bBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
