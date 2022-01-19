@@ -30,14 +30,14 @@ namespace EburyPartners
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionPersonasEmpresa));
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tContraseña = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tContraseña2 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tRegion = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tPlanta = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -88,15 +88,16 @@ namespace EburyPartners
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox3
+            // tContraseña
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(158, 357);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 20);
-            this.textBox3.TabIndex = 95;
+            this.tContraseña.ForeColor = System.Drawing.Color.Black;
+            this.tContraseña.Location = new System.Drawing.Point(158, 357);
+            this.tContraseña.Name = "tContraseña";
+            this.tContraseña.PasswordChar = '*';
+            this.tContraseña.Size = new System.Drawing.Size(166, 20);
+            this.tContraseña.TabIndex = 95;
             // 
             // label17
             // 
@@ -109,15 +110,16 @@ namespace EburyPartners
             this.label17.TabIndex = 94;
             this.label17.Text = "Contraseña:";
             // 
-            // textBox4
+            // tContraseña2
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tContraseña2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(473, 357);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(166, 20);
-            this.textBox4.TabIndex = 93;
+            this.tContraseña2.ForeColor = System.Drawing.Color.Black;
+            this.tContraseña2.Location = new System.Drawing.Point(473, 357);
+            this.tContraseña2.Name = "tContraseña2";
+            this.tContraseña2.PasswordChar = '*';
+            this.tContraseña2.Size = new System.Drawing.Size(166, 20);
+            this.tContraseña2.TabIndex = 93;
             // 
             // label18
             // 
@@ -140,15 +142,15 @@ namespace EburyPartners
             this.checkBox1.Text = "Válida (dirección actual)";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // tRegion
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tRegion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(473, 267);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 20);
-            this.textBox2.TabIndex = 90;
+            this.tRegion.ForeColor = System.Drawing.Color.Black;
+            this.tRegion.Location = new System.Drawing.Point(473, 267);
+            this.tRegion.Name = "tRegion";
+            this.tRegion.Size = new System.Drawing.Size(166, 20);
+            this.tRegion.TabIndex = 90;
             // 
             // label16
             // 
@@ -161,15 +163,15 @@ namespace EburyPartners
             this.label16.TabIndex = 89;
             this.label16.Text = "Región:";
             // 
-            // textBox1
+            // tPlanta
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tPlanta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(158, 241);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 20);
-            this.textBox1.TabIndex = 88;
+            this.tPlanta.ForeColor = System.Drawing.Color.Black;
+            this.tPlanta.Location = new System.Drawing.Point(158, 241);
+            this.tPlanta.Name = "tPlanta";
+            this.tPlanta.Size = new System.Drawing.Size(166, 20);
+            this.tPlanta.TabIndex = 88;
             // 
             // label15
             // 
@@ -201,7 +203,7 @@ namespace EburyPartners
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 188);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 85;
             this.label1.Text = "Dirección:";
             // 
@@ -211,7 +213,7 @@ namespace EburyPartners
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(13, 33);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(118, 16);
+            this.label14.Size = new System.Drawing.Size(117, 16);
             this.label14.TabIndex = 84;
             this.label14.Text = "Datos personales:";
             // 
@@ -533,6 +535,7 @@ namespace EburyPartners
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(478, 130);
             this.dataGridView1.TabIndex = 98;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // bRegistro
             // 
@@ -544,6 +547,7 @@ namespace EburyPartners
             this.bRegistro.TabIndex = 78;
             this.bRegistro.Text = "Registrar";
             this.bRegistro.UseVisualStyleBackColor = true;
+            this.bRegistro.Click += new System.EventHandler(this.bRegistro_Click);
             // 
             // button1
             // 
@@ -555,6 +559,7 @@ namespace EburyPartners
             this.button1.TabIndex = 96;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -566,6 +571,7 @@ namespace EburyPartners
             this.button2.TabIndex = 99;
             this.button2.Text = "Borrar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -577,6 +583,7 @@ namespace EburyPartners
             this.button3.TabIndex = 100;
             this.button3.Text = "Finalizar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // comboBox1
             // 
@@ -724,14 +731,14 @@ namespace EburyPartners
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tContraseña);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tContraseña2);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tRegion);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tPlanta);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
@@ -774,14 +781,14 @@ namespace EburyPartners
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tContraseña;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tContraseña2;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tRegion;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tPlanta;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;

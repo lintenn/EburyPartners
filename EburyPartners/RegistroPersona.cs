@@ -18,6 +18,7 @@ namespace EburyPartners
         private const string BD = "grupo01DB";
         private const string USER = "grupo01";
         private const string PWD = "nsB79maupU4rELd4";
+       
 
         public RegistroPersona()
         {
@@ -41,6 +42,11 @@ namespace EburyPartners
             tPais.Text = "";
             tCalle.Text = "";
             tNumero.Text = "";
+            tRegion.Text = "";
+            tPlanta.Text = "";
+            tContraseña.Text = "";
+            tContraseña2.Text = "";
+            checkBox1.Checked = false;
             tCP.Text = "";
             dateTimePicker1.Value = DateTime.Now;
         }
@@ -52,31 +58,63 @@ namespace EburyPartners
                     lStatus.ForeColor = Color.Red;
                     if (tDNI.Text.Equals(""))
                     {
-                        lStatus.Text = "El campo DNI_NIF no puede estar vacío.";
-                    }else if(tNombre1.Text.Equals(""))
+                        MessageBox.Show("El campo DNI_NIF no puede estar vacío.");
+                    }
+                    else if(tNombre1.Text.Equals(""))
                     {
-                        lStatus.Text = "El campo Nombre no puede estar vacío.";
-                    }else if (tApellido1.Text.Equals(""))
+                        MessageBox.Show("El campo Nombre no puede estar vacío.");
+                    }
+                    else if (tApellido1.Text.Equals(""))
                     {
-                        lStatus.Text = "El campo Apellido no puede estar vacío.";
-                    }else if (dateTimePicker1.Value.ToShortDateString().Equals(DateTime.Now.ToShortDateString()))
+                        MessageBox.Show("El campo Apellido no puede estar vacío.");
+                    }
+                    else if (dateTimePicker1.Value.ToShortDateString().Equals(DateTime.Now.ToShortDateString()))
                     {
-                        lStatus.Text = "El campo Fecha no puede estar vacío.";
+                        MessageBox.Show("El campo Fecha no puede estar vacío.");
+                    }
+                    else if (tCalle.Text.Equals(""))
+                    {
+                        MessageBox.Show("El campo Calle no puede estar vacío.");
+                    }
+                    else if (tNumero.Text.Equals(""))
+                    {
+                        MessageBox.Show("El campo Número no puede estar vacío.");
+                    }
+                    else if (tPlanta.Text.Equals(""))
+                    {
+                        MessageBox.Show("El campo Planta/Puerta/Oficina no puede estar vacío.");
+                    }
+                    else if (tCiudad.Text.Equals(""))
+                    {
+                        MessageBox.Show("El campo Ciudad no puede estar vacío.");
+                    }
+                    else if (tCP.Text.Equals(""))
+                    {
+                        MessageBox.Show("El campo Código Postal no puede estar vacío.");
+                    }
+                    else if (tPais.Text.Equals(""))
+                    {
+                        MessageBox.Show("El campo País no puede estar vacío.");
                     }
                     else if (DateTime.Compare(dateTimePicker1.Value.AddYears(18),DateTime.Now) > 0)
                     {
-                        lStatus.Text = "    Debe tener al menos 18 años.";
+                        MessageBox.Show("Debe tener al menos 18 años.");
+                    }
+                    else if (!tContraseña.Text.Equals(tContraseña2.Text))
+                    {
+                        MessageBox.Show("Las contraseñas no coinciden.");
+                    }
+                    else if (tContraseña.Text.Equals(""))
+                    {
+                        MessageBox.Show("El campo contraseña no puede estar vacío.");
                     }
                     else
                     {
 
                         string n2 = "'" + tNombre2.Text + "'";
                         string a2 = "'" + tApellido2.Text + "'";
-                        string calle = "'" + tCalle.Text + "'";
-                        string pais = "'" + tPais.Text + "'";
-                        string n = "'" + tNumero.Text + "'";
-                        string ciudad = "'" + tCiudad.Text + "'";
-                        string cp = "'" + tCP.Text + "'";
+                        string r  = "'" + tRegion.Text + "'";
+                        
 
                         if (tNombre2.Text.Equals(""))
                         {
@@ -86,28 +124,12 @@ namespace EburyPartners
                         {
                             a2 = "NULL";
                         }
-                        if (tCalle.Text.Equals(""))
+                        if (tRegion.Text.Equals(""))
                         {
-                            calle = "NULL";
-                        }
-                        if (tPais.Text.Equals(""))
-                        {
-                            pais = "NULL";   
-                        }
-                        if (tNumero.Text.Equals(""))
-                        {
-                            n = "NULL"; 
-                        }
-                        if (tCiudad.Text.Equals(""))
-                        {
-                            ciudad = "NULL";
-                        }
-                        if (tCP.Text.Equals(""))
-                        {
-                            cp = "NULL";
+                            r = "NULL";
                         }
 
-                        MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
+                    MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
 
                         bool esta = false;
                      
@@ -117,23 +139,26 @@ namespace EburyPartners
 
                         if (esta)
                         {
-                            lStatus.Text = "    Cliente ya existente en el sistema.";
+                            MessageBox.Show("Cliente ya existente en el sistema.");
                         }
                         else
                         {
 
-                            miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "'," + n2 + ",'" + tApellido1.Text + "'," + a2 + ",'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','Autonomo');");
+                            miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "'," + n2 + ",'" + tApellido1.Text + "'," + a2 + ",'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "','" + tCalle.Text + "','" + tNumero.Text + "','" + tPlanta.Text + "','" + tCiudad.Text + "'," + r + ",'" + tCP.Text + "','" + tPais.Text + "'," + (checkBox1.Checked ? 1:0) + ",'activo','Autónomo','" + tContraseña.Text + "',NULL);");
 
-                            lStatus.ForeColor = Color.Black;
-                            lStatus.Text = "Cliente registrado correctamente en el sistema.";
+                            MessageBox.Show("Cliente registrado correctamente en el sistema.");
+                            this.Close();
                         }
                     }
-            }catch (Exception ex)
+            }catch (Exception)
             {
-                lStatus.ForeColor = Color.Red;
-                lStatus.Text = "           Error al registrar el cliente.";
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("No se ha podido crear la cuenta por problemas de acceso a la base de datos");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            vaciarCampos();
         }
     }
 }
