@@ -22,38 +22,13 @@ namespace EburyPartners
         public RegistroPersona()
         {
             InitializeComponent();
-            cbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbTipo.Text = "Autónomo";
-            cbCuenta.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbCuenta.Text = "Pooled";
+            
         }
 
         private void bBack_Click(object sender, EventArgs e)
         {
             this.Close(); 
-        }
-
-        private void cbTipo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(cbTipo.SelectedIndex == 0)
-            {
-                lr3.Text = "*";
-                lFecha.Text = "Fecha de nacimiento:";
-                tNombre2.Enabled = true;
-                tApellido1.Enabled = true;
-                tApellido2.Enabled = true;
-            }
-            else
-            {
-               
-                lr3.Text = "";
-                lFecha.Text = "   Fecha de creación:";
-                tNombre2.Enabled = false;
-                tApellido1.Enabled = false;
-                tApellido2.Enabled = false; 
-            }
-            vaciarCampos();
-        }
+        }     
 
         private void vaciarCampos()
         {
@@ -74,8 +49,6 @@ namespace EburyPartners
         {
             try
             {
-                if (cbTipo.SelectedItem.ToString().Equals("Autónomo"))
-                {
                     lStatus.ForeColor = Color.Red;
                     if (tDNI.Text.Equals(""))
                     {
@@ -149,84 +122,12 @@ namespace EburyPartners
                         else
                         {
 
-                            miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "'," + n2 + ",'" + tApellido1.Text + "'," + a2 + ",'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','" + cbTipo.Text + "');");
+                            miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "'," + n2 + ",'" + tApellido1.Text + "'," + a2 + ",'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','Autonomo');");
 
                             lStatus.ForeColor = Color.Black;
                             lStatus.Text = "Cliente registrado correctamente en el sistema.";
                         }
                     }
-
-                }
-                else
-                {
-                    lStatus.ForeColor = Color.Red;
-                    if (tDNI.Text.Equals(""))
-                    {
-                        lStatus.Text = "El campo DNI_NIF no puede estar vacío.";
-                    }
-                    else if (tNombre1.Text.Equals(""))
-                    {
-                        lStatus.Text = "El campo Nombre no puede estar vacío.";
-                    }
-                    else if (dateTimePicker1.Value.ToShortDateString().Equals(DateTime.Now.ToShortDateString()))
-                    {
-                        lStatus.Text = "El campo Fecha no puede estar vacío.";
-                    }
-                    else
-                    {
-
-                        string calle = "'" + tCalle.Text + "'";
-                        string pais = "'" + tPais.Text + "'";
-                        string n = "'" + tNumero.Text + "'";
-                        string ciudad = "'" + tCiudad.Text + "'";
-                        string cp = "'" + tCP.Text + "'";
-
-                      
-                        if (tCalle.Text.Equals(""))
-                        {
-                            calle = "NULL";
-                        }
-                        if (tPais.Text.Equals(""))
-                        {
-                            pais = "NULL";
-                        }
-                        if (tNumero.Text.Equals(""))
-                        {
-                            n = "NULL";
-                        }
-                        if (tCiudad.Text.Equals(""))
-                        {
-                            ciudad = "NULL";
-                        }
-                        if (tCP.Text.Equals(""))
-                        {
-                            cp = "NULL";
-                        }
-
-                        MYSQLDB miBD = new MYSQLDB(SERVER, BD, USER, PWD);
-
-                        bool esta = false;
-
-                        foreach (Object[] t in miBD.Select("SELECT * FROM Cliente WHERE DNI_NIF='" + tDNI.Text + "';"))
-                        {
-                            esta = true;
-                        }
-
-                        if (esta)
-                        {
-                            lStatus.Text = "    Cliente ya existente en el sistema.";
-                        }
-                        else
-                        {
-
-                            miBD.Insert("INSERT INTO Cliente VALUES('" + tDNI.Text + "','" + tNombre1.Text + "',NULL,NULL,NULL,'" + dateTimePicker1.Value.ToString("yyyy-MM-dd") + "'," + calle + "," + n + "," + ciudad + "," + cp + "," + pais + ",'Activo','" + cbTipo.Text + "');");
-
-                            lStatus.ForeColor = Color.Black;
-                            lStatus.Text = "Cliente registrado correctamente en el sistema.";
-                        }
-                    }
-                }   
-
             }catch (Exception ex)
             {
                 lStatus.ForeColor = Color.Red;
