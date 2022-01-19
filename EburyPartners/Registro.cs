@@ -23,6 +23,7 @@ namespace EburyPartners
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
+            this.Close();
         }
 
         private void bEmpresa_Click(object sender, EventArgs e)
@@ -31,6 +32,7 @@ namespace EburyPartners
             this.Visible = false;
             ventana.ShowDialog();
             this.Visible = true;
+            this.Close();
         }
 
         private void bBack_Click(object sender, EventArgs e)

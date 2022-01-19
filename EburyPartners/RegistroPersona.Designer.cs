@@ -61,13 +61,13 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tPlanta = new System.Windows.Forms.TextBox();
+            this.tRegion = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tContraseña = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tContraseña2 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lStatus = new System.Windows.Forms.Label();
@@ -92,7 +92,7 @@
             this.bBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bBack.ForeColor = System.Drawing.Color.Transparent;
             this.bBack.Image = ((System.Drawing.Image)(resources.GetObject("bBack.Image")));
-            this.bBack.Location = new System.Drawing.Point(702, 378);
+            this.bBack.Location = new System.Drawing.Point(702, 417);
             this.bBack.Name = "bBack";
             this.bBack.Size = new System.Drawing.Size(81, 60);
             this.bBack.TabIndex = 6;
@@ -355,7 +355,7 @@
             this.lr1.AutoSize = true;
             this.lr1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lr1.ForeColor = System.Drawing.Color.Red;
-            this.lr1.Location = new System.Drawing.Point(328, 64);
+            this.lr1.Location = new System.Drawing.Point(328, 60);
             this.lr1.Name = "lr1";
             this.lr1.Size = new System.Drawing.Size(15, 20);
             this.lr1.TabIndex = 33;
@@ -450,25 +450,25 @@
             this.label15.TabIndex = 45;
             this.label15.Text = "Planta/Puerta/Oficina:";
             // 
-            // textBox1
+            // tPlanta
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tPlanta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(160, 241);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 20);
-            this.textBox1.TabIndex = 46;
+            this.tPlanta.ForeColor = System.Drawing.Color.Black;
+            this.tPlanta.Location = new System.Drawing.Point(160, 241);
+            this.tPlanta.Name = "tPlanta";
+            this.tPlanta.Size = new System.Drawing.Size(166, 20);
+            this.tPlanta.TabIndex = 46;
             // 
-            // textBox2
+            // tRegion
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tRegion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(475, 267);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 20);
-            this.textBox2.TabIndex = 48;
+            this.tRegion.ForeColor = System.Drawing.Color.Black;
+            this.tRegion.Location = new System.Drawing.Point(475, 267);
+            this.tRegion.Name = "tRegion";
+            this.tRegion.Size = new System.Drawing.Size(166, 20);
+            this.tRegion.TabIndex = 48;
             // 
             // label16
             // 
@@ -493,15 +493,16 @@
             this.checkBox1.Text = "Válida (dirección actual)";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // tContraseña
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(160, 357);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 20);
-            this.textBox3.TabIndex = 53;
+            this.tContraseña.ForeColor = System.Drawing.Color.Black;
+            this.tContraseña.Location = new System.Drawing.Point(160, 357);
+            this.tContraseña.Name = "tContraseña";
+            this.tContraseña.PasswordChar = '*';
+            this.tContraseña.Size = new System.Drawing.Size(166, 20);
+            this.tContraseña.TabIndex = 53;
             // 
             // label17
             // 
@@ -515,15 +516,16 @@
             this.label17.TabIndex = 52;
             this.label17.Text = "Contraseña:";
             // 
-            // textBox4
+            // tContraseña2
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tContraseña2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(475, 357);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(166, 20);
-            this.textBox4.TabIndex = 51;
+            this.tContraseña2.ForeColor = System.Drawing.Color.Black;
+            this.tContraseña2.Location = new System.Drawing.Point(475, 357);
+            this.tContraseña2.Name = "tContraseña2";
+            this.tContraseña2.PasswordChar = '*';
+            this.tContraseña2.Size = new System.Drawing.Size(166, 20);
+            this.tContraseña2.TabIndex = 51;
             // 
             // label18
             // 
@@ -546,12 +548,13 @@
             this.button1.TabIndex = 54;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lStatus
             // 
             this.lStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lStatus.AutoSize = true;
-            this.lStatus.Location = new System.Drawing.Point(302, 441);
+            this.lStatus.Location = new System.Drawing.Point(302, 460);
             this.lStatus.Name = "lStatus";
             this.lStatus.Size = new System.Drawing.Size(0, 13);
             this.lStatus.TabIndex = 38;
@@ -665,7 +668,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 489);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label24);
@@ -675,14 +678,14 @@
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tContraseña);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tContraseña2);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tRegion);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tPlanta);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label14);
@@ -757,13 +760,13 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tPlanta;
+        private System.Windows.Forms.TextBox tRegion;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tContraseña;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tContraseña2;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lStatus;
