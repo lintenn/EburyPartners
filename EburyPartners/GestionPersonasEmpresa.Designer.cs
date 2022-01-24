@@ -203,7 +203,7 @@ namespace EburyPartners
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 188);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 16);
+            this.label1.Size = new System.Drawing.Size(68, 16);
             this.label1.TabIndex = 85;
             this.label1.Text = "Dirección:";
             // 
@@ -213,7 +213,7 @@ namespace EburyPartners
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(13, 33);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 16);
+            this.label14.Size = new System.Drawing.Size(118, 16);
             this.label14.TabIndex = 84;
             this.label14.Text = "Datos personales:";
             // 
@@ -545,7 +545,7 @@ namespace EburyPartners
             this.bRegistro.Name = "bRegistro";
             this.bRegistro.Size = new System.Drawing.Size(88, 34);
             this.bRegistro.TabIndex = 78;
-            this.bRegistro.Text = "Registrar";
+            this.bRegistro.Text = "Añadir";
             this.bRegistro.UseVisualStyleBackColor = true;
             this.bRegistro.Click += new System.EventHandler(this.bRegistro_Click);
             // 
