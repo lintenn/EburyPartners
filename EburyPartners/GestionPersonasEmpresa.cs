@@ -89,6 +89,9 @@ namespace EburyPartners
                 {
                     MessageBox.Show("El campo contraseña no puede estar vacío.");
                 }
+                else if(comboBox1.SelectedItem==null){
+                    MessageBox.Show("El campo tipo no puede estar vacío.");
+                }
                 else
                 {
 
