@@ -60,6 +60,10 @@ namespace EburyPartners
                     {
                         MessageBox.Show("El campo DNI_NIF no puede estar vacío.");
                     }
+                    else if (!(tDNI.Text.Length == 9 && char.IsLetter(tDNI.Text.ElementAt(8))))
+                    {
+                        MessageBox.Show("El formato del DNI_NIF es incorrecto.");
+                    }
                     else if(tNombre1.Text.Equals(""))
                     {
                         MessageBox.Show("El campo Nombre no puede estar vacío.");
