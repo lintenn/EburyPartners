@@ -5,3 +5,5 @@ For civil servants in Germany and the Netherlands, Ebury clients (both freelance
 Ebury Partners is a C#-based desktop application that offers the creation and storage of accounts, financial transactions and regulated reports. 
 ## What makes it different?
 Compared to unregulated conventional banking transactions, our product offers accounts and transactions at the lowest added cost and the review and provision of reports and consultation with regulatory entities, so that said accounts and transactions are self-regulated without customers having to worry about this.
+### Disclaimer
+We do not own or work for the Ebury company. This application was developed for the purpose of learning and without any profit.
